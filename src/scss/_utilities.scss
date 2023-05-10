@@ -1,0 +1,18 @@
+
+//----- para crear clases con cada font size -----
+@each $name, $value in $size-vars {
+    .fs-#{$name} {
+        font-size: $value;
+    }
+}
+
+//----- para hacer clases con los colores para los textos y para los bg -----
+@each $key, $value in $color-list {
+    .color-#{$key} {
+        color: $value;
+    }
+    
+    .color-bg-#{$key} {
+        background-color: $value;
+    }
+}

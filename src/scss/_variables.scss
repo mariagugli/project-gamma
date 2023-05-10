@@ -1,0 +1,91 @@
+$color-list: (
+    'yellow': #FFBE0B,
+    'orange': #FB5607,
+    'pink': #FF006E,
+    'purple': #8338EC,
+    'blue': #3A86FF
+);
+
+$size-vars: (
+  "xx-small" :    .50,
+  "x-small"  :    .70,  // 11px
+  "small"    :    .75,  // 12px
+  "medium"   :    .875, // 14px
+  "normal"   :    1,    // 16px
+  "x-normal" :    1.12, // 18px
+  "big"      :    1.3,  // 21px
+  "x-big"    :    1.8,  // 29px
+  "xx-big"   :    2.5,  // 32px
+  "huge"     :    3.75  // 60px
+);
+
+/*
+
+Añadir las variables de los colores y los font size.
+
+$font-size-big: 24px;
+$font-size-default: 16px;
+$font-size-small: 14px;
+
+
+$font-size-h6: $font-size-default;
+$font-size-h5: $font-size-h6;
+
+h5 {
+    font-size: $font-size-h5;
+}
+
+h6 {
+    font-size: $font-size-h6;
+}
+
+$size-vars: (
+  "xx-small" :    .50,
+  "x-small"  :    .70,  // 11px
+  "small"    :    .75,  // 12px
+  "medium"   :    .875, // 14px
+  "normal"   :    1,    // 16px
+  "x-normal" :    1.12, // 18px
+  "big"      :    1.3,  // 21px
+  "x-big"    :    1.8,  // 29px
+  "xx-big"   :    2.5,  // 32px
+  "huge"     :    3.75  // 60px
+);
+
+----- para crear clases con cada font size -----
+@each $name, $value in $size-vars {
+    .
+        font-size: $value;
+    }
+}
+
+-- esto iría en el archivo _functions.scss --
+@function fs($font-size) {
+  @return map-get($size-vars, $font-size) * 1rem;
+}
+
+h1 {
+    font-size: fs(huge)
+}
+
+$color-list: (
+    'yellow': #FFBE0B,
+    'orange': #FB5607,
+    'pink': #FF006E,
+    'purple': #8338EC,
+    'blue': #3A86FF
+);
+
+----- para hacer clases con los colores para los textos y para los bg -----
+
+@each $key, $value in $color-list {
+    .color-#{$key} {
+        color: $value;
+    }
+    
+    .color-bg-#{$key} {
+        background-color: $value;
+    }
+}
+
+*/
