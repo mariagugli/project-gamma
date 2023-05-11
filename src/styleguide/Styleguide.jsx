@@ -10,6 +10,7 @@ export default function Styleguide() {
             <div className='pattern__section'>
                 <h2>Buttons</h2>
                 <Btn />
+                
             </div>
             
             <div className='pattern__section'>
