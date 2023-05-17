@@ -8,7 +8,7 @@
 
 //----- para hacer clases con los colores para los textos y para los bg -----
 @each $key, $value in $color-list {
-    .color-#{$key} {
+    .text-#{$key} {
         color: $value;
     }
     

@@ -15,10 +15,17 @@ function App() {
   return (
     <>
       <header>
-        <h1>Holaaa</h1>
-        <Link to="/">Home</Link>
-        <Link to="/contact">Contacto</Link>
-        <Link to="/styleguide">StyleGuide</Link>
+        <h1>Portfolio Gugli</h1>
+        <div className="topbar">
+
+          <nav className="nav">
+            <Link to="/">Home</Link>
+            <Link to="/contact">Contacto</Link>
+            <Link to="/styleguide">StyleGuide</Link>
+          </nav>
+          
+        </div>
+        
       </header>
       <Topbar />
       <main>

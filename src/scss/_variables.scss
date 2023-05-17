@@ -1,14 +1,57 @@
+/* Main colors */
+$olive: #8E8001;
+$olive__light: #DAC401;
+$olive__lighter: #FEF5A4;
+$olive__dark: #5B5201;
+$olive__darker: #332E00;
+$yellow: #F0DC25;
+$peach: #FFD7C6;
+$orange: #FF512A;
+$blue: #ECF1FB;
+$purple: #AB99BA;
+
+/* Gray scale */
+$white: white;
+$gray__light: #F9F9F9;
+$gray: #EDEDED;
+$gray__dark: #A2A1A1;
+$gray__darker: #313131;
+$black: black;
+
+/* Alert colors */
+$alert__green: #A3CD79;
+$alert__green__light: #BFDCA2;
+$alert__green__lighter: #E5F1DA;
+$alert__green__dark: #A3CD79;
+$alert__green__darker: #A3CD79;
+$alert__red: #D53838;
+$alert__red__light: #E99696;
+$alert__red__lighter: #F6D5D5;
+$alert__red__dark: #9C2121;
+$alert__red__darker: #541212;
+$alert__yellow: #F7EC8A;
+$alert__yellow__light: #FAF2B3;
+$alert__yellow__lighter: #FCF7CF;
+$alert__yellow__dark: #C8B50E;
+$alert__yellow__darker: #5F5607;
+$alert__blue: #5F6C96;
+$alert__blue__light: #B1B8CE;
+$alert__blue__lighter: #E0E2EB;
+$alert__blue__dark: #434C6A;
+$alert__blue__darker: #282D3E;
+
 $color-list: (
-    'yellow': #FFBE0B,
-    'orange': #FB5607,
-    'pink': #FF006E,
-    'blueviolet': #646cff,
-    'blue': lightblue,
-    'black': black,
+    'yellow': $yellow,
+    'olive': $olive,
+    'peach': $peach,
+    'purple': $purple,
+    'blue': $blue,
+    'orange': $orange,
+    'black': $black,
 );
 
 $color-primary: map-get($color-list,'blue');
-$color-secundary: map-get($color-list,'blueviolet');
+$color-secundary: map-get($color-list,'purple');
 
 
 $size-vars: (
