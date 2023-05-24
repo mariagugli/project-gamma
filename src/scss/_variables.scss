@@ -48,6 +48,7 @@ $color-list: (
     'blue': $blue,
     'orange': $orange,
     'black': $black,
+    'white': $white
 );
 
 $color-primary: map-get($color-list,'blue');
@@ -66,3 +67,7 @@ $size-vars: (
   "xx-big"   :    2.5,  // 32px
   "huge"     :    3.75  // 60px
 );
+
+$gap: 8px;
+$margin-bottom--lv0: 8px;
+$grid: 4;

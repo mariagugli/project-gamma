@@ -8,35 +8,37 @@ import Home from './views/Home'
 import Contact from './views/Contact'
 import Styleguide from './styleguide/Styleguide'
 import Topbar from './components/topbar/topbar'
+import Btn from './components/buttons/Btn'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <header>
-        <h1>Portfolio Gugli</h1>
-        <div className="topbar">
+      <div className='screen color-bg-blue'>
+        <header>
+          <h1>Portfolio Gugli</h1>
+          <div className="topbar">
 
-          <nav className="nav">
-            <Link to="/">Home</Link>
-            <Link to="/contact">Contacto</Link>
-            <Link to="/styleguide">StyleGuide</Link>
-          </nav>
-          
-        </div>
-        
-      </header>
-      <Topbar />
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/styleguide" element={<Styleguide />} />
-        </Routes>
-      </main>
-
+            <nav className="nav">
+              <Link to="/">Home</Link>
+              <Link to="/contact">Contacto</Link>
+              <Link to="/styleguide">StyleGuide</Link>
+            </nav>
+              
+          </div>
+            
+        </header>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/styleguide" element={<Styleguide />} />
+          </Routes>
+        </main>
+      </div>
+      <Btn>HOls</Btn>
     </>
+  
   )
 }
 

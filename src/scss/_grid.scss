@@ -1,0 +1,23 @@
+.grid {
+    display: flex;
+    width: 100%;
+    gap: $gap;
+    margin-bottom: $margin-bottom--lv0;
+    &__item {
+      height: 50px;
+      background-color: pink;
+      flex: 1;
+    }
+}
+
+[class^="grid__item--"] {
+    height: 50px;
+    background-color: pink;
+}
+
+@for $i from 1 through $grid {
+    .grid__item--#{$i} {
+        flex: 0 0 (($i /$grid) *100%);
+    }
+}
+
