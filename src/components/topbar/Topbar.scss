@@ -1,0 +1,22 @@
+@import '../../scss/global.scss';
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    & > [sizelogo="x-small"] {
+        @include mq() {
+            @include icon-size(x-medium, auto);
+        }
+    }
+    & > [sizebtn="small"] {
+        @include mq() {
+            @include size-components(sizeComp('small') sizeComp('x-big'), x-small, x-normal);
+        }
+        & > [sizeicon="xx-small"] {
+            @include mq() {
+                @include icon-size(xxx-small, auto);
+            }
+        }
+    }
+}

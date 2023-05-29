@@ -1,0 +1,28 @@
+$bp-small: 600px;
+$bp-medium: 800px;
+$bp-large: 1070px;
+$bp-extralarge: 1557px;
+
+@mixin mq($bp: $bp-medium, $bp-direction: min-width) {
+  @media all and ($bp-direction: $bp) {
+    @content;
+  }
+}
+
+@mixin size-components($padding, $gap: none, $fs:x-small, $width: fit-content) {
+  padding: $padding;
+  gap: sizeComp($gap);
+  font-size: fs($fs);
+  width: $width;
+}
+
+@mixin btn-colors($bg-color, $br-color, $color-txt) {
+  background-color: $bg-color;
+  border-color: $br-color;
+  color: $color-txt;
+}
+
+@mixin icon-size($width, $height) {
+  width: sizeIcon($width);
+  height: $height;
+}

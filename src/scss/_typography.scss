@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;400;900&display=swap');
+ h1, .h1 {
+   font-weight: fw(extrabold);
+   font-size: fs(xx-big);
+ }
+
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p {
+   font-weight: fw(regular);
+ }
+
+ h2, .h2 {
+   font-size: fs(x-big);
+ }
+ h3, .h3 {
+   font-size: fs(big);
+ }
+ h4, .h4 {
+   font-size: fs(x-normal);
+ }
+ h5, .h5, p {
+   font-size: fs(normal);
+ }
+ h6, .h6 {
+   font-size: fs(medium);
+ }
+
+
+
+
+ /* 
+ tres fuentes sin contar los encabezados -textos pequeños, medianos y (por si hay) grandes.
+
+ */

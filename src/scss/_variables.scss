@@ -1,0 +1,148 @@
+/* Main colors */
+$olive: #8E8001;
+$olive__light: #DAC401;
+$olive__lighter: #FEF5A4;
+$olive__dark: #5B5201;
+$olive__darker: #332E00;
+$yellow: #F0DC25;
+$yellow__light: #F8EE96;
+$yellow__lighter: #FDFBE7;
+$yellow__dark: #998B0B;
+$yellow__darker: #645B07;
+$peach: #FFD7C6;
+$peach__light: #FFE6DB;
+$peach__lighter: #FFF4F0;
+$peach__dark: #FFA985;
+$peach__darker: #FF621F;
+$orange: #FF512A;
+$orange__light: #FFBCAD;
+$orange__lighter: #FFEAE5;
+$orange__dark: #C22300;
+$orange__darker: #8F1A00;
+$blue: #ECF1FB;
+$blue__light: #F2F6FC;
+$blue__lighter: #FBFCFE;
+$blue__dark: #ABC1ED;
+$blue__darker: #789CE3;
+$purple: #AB99BA;
+$purple__light: #D2C8DA;
+$purple__lighter: #F7F6F9;
+$purple__dark: #8C73A0;
+$purple__darker: #604C71;
+
+/* Gray scale */
+$white: white;
+$gray__light: #F9F9F9;
+$gray: #EDEDED;
+$gray__dark: #A2A1A1;
+$gray__darker: #313131;
+$black: black;
+
+/* Alert colors */
+$alert__green: #A3CD79;
+$alert__green__light: #BFDCA2;
+$alert__green__lighter: #E5F1DA;
+$alert__green__dark: #A3CD79;
+$alert__green__darker: #A3CD79;
+$alert__red: #D53838;
+$alert__red__light: #E99696;
+$alert__red__lighter: #F6D5D5;
+$alert__red__dark: #9C2121;
+$alert__red__darker: #541212;
+$alert__yellow: #F7EC8A;
+$alert__yellow__light: #FAF2B3;
+$alert__yellow__lighter: #FCF7CF;
+$alert__yellow__dark: #C8B50E;
+$alert__yellow__darker: #5F5607;
+$alert__blue: #5F6C96;
+$alert__blue__light: #B1B8CE;
+$alert__blue__lighter: #E0E2EB;
+$alert__blue__dark: #434C6A;
+$alert__blue__darker: #282D3E;
+
+$color-list: (
+    'yellow': $yellow,
+    'olive': $olive,
+    'peach': $peach,
+    'peach__lighter': $peach__lighter,
+    'purple': $purple,
+    'blue': $blue,
+    'blue__dark' : $blue__dark,
+    'orange': $orange,
+    'black': $black,
+    'gray__darker': $gray__darker,
+    'white': $white
+);
+
+$color-primary: map-get($color-list,'orange');
+$color-secundary: map-get($color-list,'blue');
+
+$size-vars: (
+  "xx-small" :    .50, 
+  "x-small"  :    .70,  // 11px
+  "small"    :    .75,  // 12px
+  "medium"   :    .875, // 14px
+  "normal"   :    1,    // 16px
+  "x-normal" :    1.25, // 20px
+  "big"      :    1.5,  // 24px
+  "x-big"    :    2,  // 32px
+  "xx-big"   :    2.5,  // 40px
+  "huge"     :    6  // 96px
+);
+
+$weight-font: (
+  "light"     :   200,
+  "regular"   :   400,
+  "extrabold" :   900
+);
+
+$size-components: (
+  "none"     :    0,
+  "xxx-small":   .25,  // 4px
+  "xx-small" :    .50,  // 8px
+  "x-small"  :    .625, // 10px
+  "small"    :    .75,  // 12px
+  "medium"   :    .875, // 14px
+  "normal"   :    1,    // 16px
+  "x-normal" :    1.125, // 18px
+  "big"      :    1.375,  // 22px
+  "x-big"    :    1.75,  // 28px
+  "xx-big"   :    2,  // 32px
+  "xxx-big"  :    2.25, // 36px
+  "huge"     :    2.50  // 40px
+);
+
+$icon-var: (
+  "xxxx-small" :   1.125,  // 18px
+  "xxx-small"  :    1.5,    // 24px
+  "xx-small"   :    1.75,   // 28px
+  "x-small"    :    2.25,   // 36px
+  "small"      :    2,      // 32px
+  "medium"     :    2.75,   // 44px
+  "x-medium"   :    4.125,  // 66px
+  "normal"     :    5,      //80px
+  "x-normal"   :    5.75,   //92px
+  "xx-normal"  :    6.5625, //105px
+  "xxx-normal" :    7,      // 112px
+  "xxxx-normal" :    8.4375, //135px
+  "big"        :    9.375, //150px
+  "x-big"      :    10.625, //170px
+  "xx-big"     :    15.3125, //245px
+  "xxx-big"    :    19.6875, //315px
+  "xxxx-big"   :    20.6875, //331px
+  "huge"       :    32.1875, //515px
+  "x-huge"     :    43.5625 //697px
+);
+
+$type-tag: (
+  "wordpress" : $blue__dark,
+  "css"       : $peach__dark,
+  "javascript": $yellow__light,
+  "uxui"      : $purple
+);
+
+
+
+
+
+

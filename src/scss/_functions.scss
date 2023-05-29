@@ -1,0 +1,16 @@
+
+@function fs($font-size) {
+  @return map-get($size-vars, $font-size) * 1rem;
+}
+
+@function sizeComp($size-comp) {
+  @return map-get($size-components, $size-comp) * 1rem;
+}
+
+@function sizeIcon($size-icon) {
+  @return map-get($icon-var, $size-icon) * 1rem;
+}
+
+@function fw($font-weight) {
+  @return map-get($weight-font, $font-weight);
+}

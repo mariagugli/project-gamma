@@ -1,0 +1,155 @@
+@import '../../scss/global.scss';
+
+.btn {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-around;
+  border-radius: 42px;
+  border: 1px solid transparent;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  transition: background-color 0.25s;
+}
+.btn:focus,
+.btn:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+[sizebtn="small"] {
+  @include size-components(sizeComp('x-small') sizeComp('big'), x-small, medium);
+}
+[sizebtn="default"] {
+  @include size-components(sizeComp('small') sizeComp('x-big'), x-small, x-normal);
+}
+[sizebtn="big"] {
+  @include size-components(sizeComp('small') sizeComp('xx-big'), x-small, big);
+}
+[sizebtn="xbig"] {
+  @include size-components(sizeComp('medium') sizeComp('xxx-big'), x-small, x-big);
+}
+[sizebtn="xxbig"] {
+  @include size-components(sizeComp('medium') sizeComp('xxx-big'), x-small, xx-big);
+}
+
+.btn-primary {
+  @include btn-colors($color-primary, $orange__dark, $white);
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    @include btn-colors($orange__light, $orange, $black);
+    & > svg > path {
+      fill: black;
+    }
+  }
+  &:focus,
+  &:focus-visible {
+    outline: 4px auto $orange;
+  }
+}
+  
+.btn-secundary {
+  @include btn-colors($color-secundary, $blue__dark, $black);
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    @include btn-colors($blue__dark, $blue__darker, $black);
+  }
+  &:focus,
+  &:focus-visible {
+    outline: 4px auto $blue__darker;
+  }
+}
+
+.btn-text__dark, .btn-text__light {
+  background: none;
+  transition: color 0.25s;
+  transition: background 0.25s;
+}
+
+.btn-text__light {
+  @include btn-colors(none, none, $peach__lighter);
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    @include btn-colors($peach__lighter, none, $gray__darker);
+    &::before {
+      content: "";
+      background-color: $gray__darker;
+      border-radius: 100%;
+      width: 14px;
+      height: 14px;
+      margin: 14px 20px 14px 8px;
+    }
+    & > span {
+      display: none;
+    }
+  }
+  &:focus,
+  &:focus-visible {
+    outline: 4px auto $gray__darker;
+  }
+}
+
+.btn-text__dark {
+  @include btn-colors(none, none, $gray__darker);
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    @include btn-colors($gray__darker, none, $peach__lighter);
+    &::before {
+      content: "";
+      background-color: $peach__lighter;
+      border-radius: 100%;
+      width: 14px;
+      height: 14px;
+      margin: 14px 20px 14px 8px;
+    }
+    & > span {
+      display: none;
+    }
+  }
+  &:focus,
+  &:focus-visible {
+    outline: 4px auto $peach__lighter;
+  }
+}
+
+.no-hovereffect-light,
+.no-hovereffect-dark {
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    &::before {
+      content: "";
+      background-color: $peach__lighter;
+      border-radius: 100%;
+      width: 14px;
+      height: 14px;
+      margin: 14px 20px 14px 8px;
+      display: none;
+    }
+    & > span {
+      display: flex;
+    }
+  }
+}
+.no-hovereffect-light,
+.no-hovereffect-dark {
+  background: none;
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+}
+.no-hovereffect-light {
+  @include btn-colors(none, none, $peach__lighter);
+}
+  
+.no-hovereffect-dark {
+  @include btn-colors(none, none, $gray__darker);
+}

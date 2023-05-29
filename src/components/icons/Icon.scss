@@ -1,0 +1,182 @@
+@import '../../scss/global.scss';
+
+
+[sizeicon="xx-small"] {
+    @include icon-size(xxxx-small, auto)
+}
+[sizeicon="x-small"] {
+    @include icon-size(xxx-small, auto)
+}
+[sizeicon="small"] {
+    @include icon-size(xx-small, auto)
+}
+[sizeicon="normal"] {
+    @include icon-size(x-small, auto)
+}
+[sizeicon="big"] {
+    @include icon-size(medium, auto)
+}
+[sizeicon="x-big"] {
+    @include icon-size(x-medium, auto)
+}
+[sizeicon="xx-big"] {
+    @include icon-size(normal, auto)
+}
+
+.icon-dark-bg, .icon-dark-br, .icon-light-bg, .icon-light-br {
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-dark-bg, .icon-light-bg {
+    padding: sizeComp(xxx-small);
+}
+
+.icon-dark-br, .icon-light-br {
+    padding: sizeComp(xx-small);
+}
+
+.icon-dark-bg {
+    background-color: $gray__darker;
+}
+
+.icon-dark-br {
+    border: 1px solid $gray__darker;
+}
+
+.icon-light-bg {
+    background-color: $peach__lighter;
+}
+
+.icon-light-br {
+    border: 1px solid $peach__lighter;
+}
+
+.icon__doc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.line__icon__doc {
+    border-radius: 42px;
+    width: 100%;
+}
+
+[sizeicondoc], .icon-flower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    @include size-components(0, small, normal, min-content);
+    & > p {
+        margin: 0;
+    }
+}
+[sizeicondoc="small"] {
+    flex-direction: row;
+    align-items: flex-end;
+    width: fit-content;
+    & > .icon__doc {
+        @include size-components(sizeComp(xx-small) sizeComp(xxx-small), xxx-small);
+        @include icon-size(small, sizeIcon(medium));
+        border-radius: 4px;
+        & > .line__icon__doc {
+            height: 1px;
+        }
+    }
+}
+[sizeicondoc="default"] {
+    & > .icon__doc {
+        @include size-components(sizeComp(small) sizeComp(xx-small), xx-small);
+        @include icon-size(x-medium, sizeIcon(normal));
+        border-radius: 4px;
+        & > .line__icon__doc {
+            height: 2px;
+        }
+    }
+}
+[sizeicondoc="big"] {
+    @include size-components(0, normal, normal, min-content);
+    & > .icon__doc {
+        @include size-components(sizeComp(x-big) sizeComp(small), small);
+        @include icon-size(xx-normal, sizeIcon(xxx-normal));
+        border-radius: 6px;
+        & > .line__icon__doc {
+            height: 3px;
+        }
+    }
+}
+[sizeicondoc="x-big"] {
+    @include size-components(0, big, x-normal, min-content);
+    & > .icon__doc {
+        @include size-components(sizeComp(xx-big) sizeComp(medium), x-normal);
+        @include icon-size(xxxx-normal, sizeIcon(x-big));
+        border-radius: 8px;
+        & > .line__icon__doc {
+            height: 4px;
+        }
+    }
+}
+[sizeflower="xx-small"] {
+    @include icon-size (medium, sizeIcon(medium))
+}
+[sizeflower="x-small"] {
+    @include icon-size (x-medium, sizeIcon(x-medium))
+}
+[sizeflower="small"] {
+    @include icon-size (x-normal, sizeIcon(x-normal))
+}
+[sizeflower="medium"] {
+    @include icon-size (xxx-normal, sizeIcon(xxx-normal))
+}
+[sizeflower="big"] {
+    @include icon-size (big, sizeIcon(big))
+}
+[sizeflower="x-big"] {
+    @include icon-size (xx-big, sizeIcon(xx-big))
+}
+[sizeflower="huge"] {
+    @include icon-size (xxxx-big, sizeIcon(xxxx-big))
+}
+
+[sizeflowerlarge="small"] {
+    @include icon-size (medium, sizeIcon(x-medium))
+}
+[sizeflowerlarge="medium"] {
+    @include icon-size (xx-big, sizeIcon(xxx-normal))
+}
+[sizeflowerlarge="big"] {
+    @include icon-size (xxxx-big, sizeIcon(big))
+}
+
+[sizeflowerxlarge="small"] {
+    @include icon-size (xxx-big, sizeIcon(x-medium))
+}
+[sizeflowerxlarge="medium"] {
+    @include icon-size (huge, sizeIcon(xxx-normal))
+}
+[sizeflowerxlarge="big"] {
+    @include icon-size (x-huge, sizeIcon(big))
+}
+
+[sizelogo="x-small"] {
+    @include icon-size(x-small, auto);
+}
+
+[sizelogo="small"] {
+    @include icon-size(x-medium, auto);
+}
+
+[sizelogo="default"] {
+    @include icon-size(xxx-big, auto);
+}
+[sizelogo="big"] {
+    width: 654px;
+    height: auto;
+}
+

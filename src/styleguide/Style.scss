@@ -1,0 +1,135 @@
+@import '../scss/global.scss';
+
+body {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 400;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: sizeComp('xx-big');
+}
+
+.group__sections-styleguide,
+.group__sections-styleguide--column {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: sizeComp('xx-big');
+    flex-direction: column;
+    @include mq {
+        flex-wrap: nowrap;
+    }
+}
+
+.group__sections-styleguide {
+    @include mq($bp-large) {
+        flex-direction: row;
+    }
+
+}
+
+
+.section__styleguide {
+    background-color: $gray__light;
+    border: 1px solid $gray__dark;
+    border-radius: 12px;
+    padding: sizeComp('big');
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: sizeComp('normal');
+    width: calc(100% - 44px);
+    height: fit-content;
+
+    @include mq {
+        flex-wrap: nowrap;
+    }
+}
+
+.section__typography {
+    text-align: center;
+}
+.section__tags {
+    width: fit-content;
+}
+
+.articles__styleguide {
+    padding-left: sizeComp('big');
+    display: flex;
+    flex-direction: column;
+    gap: sizeComp('x-small');
+}
+
+.article__icons--styleguide {
+    display: flex;
+    gap: sizeComp('normal');
+    flex-wrap: wrap;
+
+    @include mq {
+        flex-wrap: nowrap;
+    }
+}
+
+.pattern__group-styleguide {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: sizeComp('normal');
+
+    @include mq {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+}
+
+.guide__elements-styleguide {
+    text-align: center;
+}
+
+.group__elements--row {
+    display: flex;
+    gap: sizeComp('normal');
+}
+
+.typography__name {
+    display: flex;
+    justify-content: center;
+}
+.title__styleguide {
+    font-weight: fw('extrabold');
+    font-size: fs('xx-big');
+    margin: 0;
+}
+.subtitle__styleguide {
+    margin: 10px 0;
+}
+.underline__title {
+    display: block;
+    width: fit-content;
+    &::after {
+        content: '';
+        height: 16px;
+        width: 100%;
+        padding: 0 5px;
+        background-color: $yellow;
+        display: block;
+        border-radius: 50px;
+        margin-top: -20px;
+    }
+}
+[data-text]::before {
+    content: attr(data-text) ": ";
+    text-decoration: underline;
+}
+
+.text__explaining {
+    color: $gray__dark;
+    text-decoration: underline dotted $gray__dark;
+}
+
+.width-100 {
+    width: 100%;
+}

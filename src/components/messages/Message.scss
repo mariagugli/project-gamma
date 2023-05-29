@@ -1,0 +1,23 @@
+@import '../../scss/global.scss';
+
+[sizemessage] {
+    border-radius: 22px;
+    color: $white;
+}
+
+.ms-primary {
+    background-color: $orange;
+}
+.ms-secondary {
+    background-color: $olive;
+}
+
+[sizemessage="small"] {
+    @include size-components(sizeComp(medium) sizeComp(big), none, medium);
+}
+[sizemessage="default"] {
+    @include size-components(sizeComp(medium) sizeComp(x-big), none, normal);
+}
+[sizemessage="big"] {
+    @include size-components(sizeComp(medium) sizeComp(xx-big), none, x-normal);
+}

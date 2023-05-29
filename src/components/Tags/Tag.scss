@@ -1,0 +1,15 @@
+@import '../../scss/global.scss';
+
+[sizetag] {
+    border-radius: 42px;
+}
+
+[sizetag="small"] {
+    @include size-components(sizeComp(x-small) sizeComp(x-normal), none, normal);
+}
+[sizetag="default"] {
+    @include size-components(sizeComp(x-small) sizeComp(x-big), none, x-normal);
+}
+[sizetag="big"] {
+    @include size-components(sizeComp(x-small) sizeComp(xx-big), none, x-normal);
+}
