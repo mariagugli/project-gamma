@@ -1,16 +1,8 @@
 import './Inputs.scss';
 
-    function InputToggleSwitch ({ variant, slider }) {
-        return (
-            <div>
-                <label className={variant ? `switch ${variant}` : "switch"}>
-                    <input type='checkbox'></input>
-                    <span className={slider ? `slider ${slider}` : "slider"}></span>
-                </label>
-
-            </div>
-            
-        )
-    }
-
-export default InputToggleSwitch
+export default function InputToggleSwitch (props) {
+    return <label className={props.switch ? `switch ${props.switch}` : "switch"}>
+        <input type='checkbox'></input>
+        <span className={props.slider ? `slider ${props.slider}` : "slider"}></span>
+    </label>
+}

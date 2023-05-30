@@ -1,15 +1,14 @@
 @import '../../scss/global.scss';
 
-[sizetag] {
+.tag-small, .tag-default, .tag-big {
     border-radius: 42px;
 }
-
-[sizetag="small"] {
+.tag-small {
     @include size-components(sizeComp(x-small) sizeComp(x-normal), none, normal);
 }
-[sizetag="default"] {
+.tag-default {
     @include size-components(sizeComp(x-small) sizeComp(x-big), none, x-normal);
 }
-[sizetag="big"] {
+.tag-big {
     @include size-components(sizeComp(x-small) sizeComp(xx-big), none, x-normal);
 }

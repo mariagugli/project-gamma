@@ -17,31 +17,30 @@
     display: flex;
     flex-direction: column;
 }
-[sizeinput="small"] {
+.input-small {
     @include size-components(sizeComp(xx-small), x-small, medium);
     & > .input {
         @include size-components(sizeComp(x-small) sizeComp(medium), x-small, medium);
     }
 }
-[sizeinput="default"] {
+.input-default {
     @include size-components(sizeComp(xx-small), small, normal);
     & > .input {
         @include size-components(sizeComp(small) sizeComp(x-normal), small, normal);
     }
 }
-[sizeinput="big"] {
+.input-big {
     @include size-components(sizeComp(xx-small), medium, x-normal);
     & > .input {
         @include size-components(sizeComp(x-small) sizeComp(medium), medium, x-normal);
     }
 }
-[sizeinput="x-big"] {
+.input-x-big {
     @include size-components(sizeComp(xx-small), x-normal, big);
     & > .input {
         @include size-components(sizeComp(x-small) sizeComp(medium), x-normal, big);
     }
 }
-
 .switch, .switch-big {
     position: relative;
     margin: 14px;
@@ -75,12 +74,10 @@
     display: flex;
     align-items: center;
 }
-
 .slider-big {
     padding: 39px 39px 39px 90px;
     border-radius: 44px;
 }
-  
 .slider::before, .slider-big::before {
     position: absolute;
     content: "";

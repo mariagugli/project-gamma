@@ -1,11 +1,7 @@
 import './Tag.scss';
 
-    function Tag({ variant, size }) {
-        return (
-            <>
-                <div className={variant} sizetag={size}>{variant}</div>
-            </>
-        )
-    }
-
-export default Tag
+export default function Tag(props) {
+    return <>
+        <div className={`${props.type} ${props.size}`}>{props.type}</div>
+    </>
+}

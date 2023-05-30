@@ -20,19 +20,19 @@
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-[sizebtn="small"] {
+.btn-small {
   @include size-components(sizeComp('x-small') sizeComp('big'), x-small, medium);
 }
-[sizebtn="default"] {
+.btn-default {
   @include size-components(sizeComp('small') sizeComp('x-big'), x-small, x-normal);
 }
-[sizebtn="big"] {
+.btn-big {
   @include size-components(sizeComp('small') sizeComp('xx-big'), x-small, big);
 }
-[sizebtn="xbig"] {
+.btn-xbig {
   @include size-components(sizeComp('medium') sizeComp('xxx-big'), x-small, x-big);
 }
-[sizebtn="xxbig"] {
+.btn-xxbig {
   @include size-components(sizeComp('medium') sizeComp('xxx-big'), x-small, xx-big);
 }
 
@@ -149,7 +149,7 @@
 .no-hovereffect-light {
   @include btn-colors(none, none, $peach__lighter);
 }
-  
+
 .no-hovereffect-dark {
   @include btn-colors(none, none, $gray__darker);
 }

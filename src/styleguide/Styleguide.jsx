@@ -40,19 +40,22 @@ export default function Styleguide() {
                     <h3 className='subtitle__styleguide'>Primary buttons</h3>
                     <div className='pattern__group-styleguide'>
                         <div className='guide__elements-styleguide'>
-                            <Btn variant="btn-primary text-white" size="small" icon={<IconGithub size="xx-small" fill="white"/>} text="Enviar"/>
+                            <Btn type="btn-primary" size="btn-small">
+                                <IconGithub size="xx-small" fill="white"/>
+                                Enviar
+                            </Btn>
                             <h4 className='text__explaining'>Size small</h4>
                         </div>  
                         <div className='guide__elements-styleguide'>
-                            <Btn variant="btn-primary text-white" text="Enviar"/>
+                            <Btn type="btn-primary text-white"/>
                             <h4 className='text__explaining'>Size default</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <Btn variant="btn-primary text-white" size="big"text="Enviar"/>
+                            <Btn type="btn-primary text-white" size="big"text="Enviar"/>
                             <h4 className='text__explaining'>Size big</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <Btn variant="btn-primary text-white" size="xbig" text="Enviar"/>
+                            <Btn type="btn-primary text-white" size="xbig" text="Enviar"/>
                             <h4 className='text__explaining'>Size xbig</h4>
                         </div>
                     </div>
@@ -62,19 +65,19 @@ export default function Styleguide() {
                     <h3 className='subtitle__styleguide'>Secundary buttons</h3>
                     <div className='pattern__group-styleguide'>
                         <div className='guide__elements-styleguide'>
-                            <Btn variant="btn-secundary" size="small" text="Ver más"/>
+                            <Btn type="btn-secundary" size="small" text="Ver más"/>
                             <h4 className='text__explaining'>Size small</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <Btn variant="btn-secundary" text="Ver más"/>
+                            <Btn type="btn-secundary" text="Ver más"/>
                             <h4 className='text__explaining'>Size default</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <Btn variant="btn-secundary" size="big" text="Ver más"/>
+                            <Btn type="btn-secundary" size="big" text="Ver más"/>
                             <h4 className='text__explaining'>Size big</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <Btn variant="btn-secundary" size="xbig" text="Ver más"/>
+                            <Btn type="btn-secundary" size="xbig" text="Ver más"/>
                             <h4 className='text__explaining'>Size xbig</h4>
                         </div>
                     </div>
@@ -234,23 +237,35 @@ export default function Styleguide() {
                 <section className='section__styleguide section__tags'>
                     <h2 className='title__styleguide'>Tags</h2>
                     <article className='articles__styleguide'>
-                        <Tag variant='wordpress' size='small' />
-                        <Tag variant='css' size='default' />
-                        <Tag variant='javascript' size='big' />
+                        <Tag type='wordpress' size='tag-small' />
+                        <Tag type='css' size='tag-default' />
+                        <Tag type='javascript' size='tag-big' />
                     </article>
                 </section>
                 <section className='section__styleguide'>
                     <h2 className='title__styleguide'>Mensajes</h2>
                     <div className='pattern__group-styleguide'>
                         <article className='articles__styleguide'>
-                            <Message variant='ms-primary' text='Hola! Soy un mensaje principal pequeño' size='small'/>
-                            <Message variant='ms-primary' text='Hola! Soy un mensaje principal default' size='default'/>
-                            <Message variant='ms-primary' text='Hola! Soy un mensaje principal grande' size='big'/>
+                            <Message type='ms-primary' size='ms-small'>
+                                Hola! Soy un mensaje principal pequeño.
+                            </Message>
+                            <Message type='ms-primary' size='ms-default'>
+                                Hola! Soy un mensaje principal default.
+                            </Message>
+                            <Message type='ms-primary' size='ms-big'>
+                                Hola! Soy un mensaje principal grande.
+                            </Message>
                         </article>
                         <article className='articles__styleguide'>
-                            <Message variant='ms-secondary' text='Hola! Soy un mensaje secundario pequeño' size='small'/>
-                            <Message variant='ms-secondary' text='Hola! Soy un mensaje secundario default' size='default'/>
-                            <Message variant='ms-secondary' text='Hola! Soy un mensaje secundario grande' size='big'/>
+                        <Message type='ms-secondary' size='ms-small'>
+                                Hola! Soy un mensaje secundario pequeño.
+                            </Message>
+                            <Message type='ms-secondary' size='ms-default'>
+                                Hola! Soy un mensaje secundario default.
+                            </Message>
+                            <Message type='ms-secondary' size='ms-big'>
+                                Hola! Soy un mensaje secundario grande.
+                            </Message>
                         </article>
                     </div>
                 </section>

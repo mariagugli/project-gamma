@@ -1,0 +1,83 @@
+[
+    {
+        "id"    : "todoapp",
+        "title" : "Todo App",
+        "description" : "Hola, esta es la descripción de este proyecto",
+        "technologies" : ["React", "Vite", "css"],
+        "image" : "",
+        "links" : [
+            {
+                "url" : "github.com",
+                "name" : "github",
+                "img" : "github-logo.png"
+            },
+            {
+                "url" : "instagram.com",
+                "name" : "instagram",
+                "img" : "instagram-logo.png"
+            },
+            {
+                "url" : "linkedin.com",
+                "name" : "linkedin",
+                "img" : "linkedin-logo.png"
+            }
+        ],
+        "year" : "2023",
+        "role" : "Fronted Developer"
+
+    },
+    {
+        "id"    : "todoapp",
+        "title" : "Todo App",
+        "description" : "Hola, esta es la descripción de este proyecto",
+        "technologies" : ["React", "Vite", "css"],
+        "image" : "",
+        "links" : [
+            {
+                "url" : "github.com",
+                "name" : "github",
+                "img" : "github-logo.png"
+            },
+            {
+                "url" : "instagram.com",
+                "name" : "instagram",
+                "img" : "instagram-logo.png"
+            },
+            {
+                "url" : "linkedin.com",
+                "name" : "linkedin",
+                "img" : "linkedin-logo.png"
+            }
+        ],
+        "year" : "2023",
+        "role" : "Fronted Developer"
+
+    },
+    {
+        "id"    : "todoapp",
+        "title" : "Todo App",
+        "description" : "Hola, esta es la descripción de este proyecto",
+        "technologies" : ["React", "Vite", "css"],
+        "image" : "",
+        "links" : [
+            {
+                "url" : "github.com",
+                "name" : "github",
+                "img" : "github-logo.png"
+            },
+            {
+                "url" : "instagram.com",
+                "name" : "instagram",
+                "img" : "instagram-logo.png"
+            },
+            {
+                "url" : "linkedin.com",
+                "name" : "linkedin",
+                "img" : "linkedin-logo.png"
+            }
+        ],
+        "year" : "2023",
+        "role" : "Fronted Developer"
+
+    }
+]

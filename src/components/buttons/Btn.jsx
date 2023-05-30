@@ -1,18 +1,11 @@
 import './Btn.scss';
 
-    function Btn({ icon, text, variant, size }) {
-        return (
-            <>
-                <button 
-                    className={variant ? `btn ${variant}` : "btn"}
-                    sizebtn={size ? size : "default"}
-                >
-                    {icon}
-                    {text}
-                </button>
+export default   function Btn(props) {
+        return <button className={`btn ${props.type} ${props.size}`}> 
+            {props.children}
+        </button>
                 
-            </>
-        )
+            
+        
     }
 
-export default Btn

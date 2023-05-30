@@ -1,0 +1,21 @@
+@import '../../scss/global.scss';
+
+.searcher {
+    display: flex;
+    & > button {
+        background: none;
+        border: none;
+    }
+}
+.searcher__bar {
+    @include size-components(sizeComp(xx-small), x-small, medium);
+    & > .input {
+        @include size-components(sizeComp(x-small) sizeComp(medium), x-small, medium);
+    }
+    @include mq {
+        @include size-components(sizeComp(xx-small), small, normal);
+        & > .input {
+            @include size-components(sizeComp(small) sizeComp(x-normal), small, normal);
+        }
+    }
+}

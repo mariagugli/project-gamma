@@ -1,11 +1,7 @@
 import './Message.scss';
 
-    function Message({ variant, size, text }) {
-        return (
-            <>
-                <div className={variant} sizemessage={size}>{text}</div>
-            </>
-        )
-    }
-
-export default Message
+export default function Message(props) {
+    return <>
+        <div className={`${props.type} ${props.size}`}>{props.children}</div>
+    </>
+}
