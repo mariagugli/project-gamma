@@ -1,6 +1,6 @@
 @import '../../scss/global.scss';
 
-.sidebar__message {
+.notification {
     background-color: $white;
     border-radius: 10px;
     display: flex;
@@ -25,13 +25,13 @@
     }
 }
 
-.sidebar__btnbox {
+.notification__btnbox {
     display: flex;
     justify-content: flex-end;
     width: 100%;
 }
 
-.sidebarms__name {
+.notification__name {
     font-size: fs(x-normal);
     font-weight: fw(extrabold);
     margin: 0;
@@ -43,7 +43,7 @@
     }
 }
 
-.sidebarms__message {
+.notification__text {
     margin: 0;
     @include mq() {
         font-size: fs(big);

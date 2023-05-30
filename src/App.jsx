@@ -5,10 +5,9 @@ import './scss/global.scss'
 import Home from './views/Home'
 import Contact from './views/Contact'
 import Styleguide from './styleguide/Styleguide'
-import Topbar from './components/topbar/Topbar'
-import BtnText from './components/buttons/BtnText'
 import IconBtnText from './components/icons/IconBtnText'
 import IconArrowRight from './components/icons/IconArrowRight'
+import Btn from './components/buttons/Btn'
 
 function App() {
 
@@ -39,7 +38,9 @@ function App() {
         </main>
       </div>
 
-      <BtnText variant="no-hovereffect-light" size="big" icon={<IconBtnText variantbg="icon-light-bg" variantbr="icon-dark-br" icon={<IconArrowRight size="xx-small" fill="peach__lighter"/>} />} />
+      <Btn type="no-hovereffect-light" size="btn-big">
+        <IconBtnText variantbg="icon-light-bg" variantbr="icon-dark-br" icon={<IconArrowRight size="xx-small" fill="peach__lighter"/>}/>
+      </Btn>
 
     </>
   )

@@ -3,17 +3,15 @@ import IconLogo from '../icons/IconLogo';
 import IconPlus from '../icons/IconPlus';
 import './Topbar.scss';
 
-    function Topbar(className) {
-        return (
-            <div className={className ? `topbar ${className}` : "topbar"}>
-                <IconLogo
-                    className='logo-topbar'
-                    size='x-small'
-                    fill='orange'
-                />
-                <Btn className='btn-topbar' variant='btn-secundary' size='small' icon={<IconPlus size='xx-small' fill='gray__darker'/>}/>
-            </div>
-        )
-    }
-
-export default Topbar
+export default function Topbar(props) {
+    return <div className={props.className ? `topbar ${props.className}` : "topbar"}>
+        <IconLogo
+            className='logo-topbar'
+            size='x-small'
+            fill='orange'
+        />
+        <Btn className='btn-topbar' type='btn-secundary' size='btn-small'>
+            <IconPlus size='xx-small' fill='gray__darker'/>
+        </Btn>
+    </div>
+}

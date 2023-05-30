@@ -1,7 +1,6 @@
 import './Style.scss'
 import Nav from "./Nav"
 import Btn from '../components/buttons/Btn'
-import BtnText from '../components/buttons/BtnText'
 import IconArrowRight from '../components/icons/IconArrowRight'
 import IconBtnText from '../components/icons/IconBtnText'
 import IconGithub from '../components/icons/IconGithub'
@@ -24,7 +23,7 @@ import InputToggleSwitch from '../components/inputs/InputToggleSwitch'
 import Tag from '../components/Tags/Tag'
 import Message from '../components/messages/Message'
 import Topbar from '../components/topbar/Topbar'
-import SidebarMessage from '../components/sidebarMessage/SidebarMessage'
+import Notification from '../components/notification/Notification'
 import Weather from '../components/weather/Weather'
 
 
@@ -45,17 +44,17 @@ export default function Styleguide() {
                                 Enviar
                             </Btn>
                             <h4 className='text__explaining'>Size small</h4>
-                        </div>  
+                        </div>
                         <div className='guide__elements-styleguide'>
-                            <Btn type="btn-primary text-white"/>
+                            <Btn type="btn-primary">Enviar</Btn>
                             <h4 className='text__explaining'>Size default</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <Btn type="btn-primary text-white" size="big"text="Enviar"/>
+                            <Btn type="btn-primary" size="btn-big">Enviar</Btn>
                             <h4 className='text__explaining'>Size big</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <Btn type="btn-primary text-white" size="xbig" text="Enviar"/>
+                            <Btn type="btn-primary" size="btn-xbig">Enviar</Btn>
                             <h4 className='text__explaining'>Size xbig</h4>
                         </div>
                     </div>
@@ -65,19 +64,19 @@ export default function Styleguide() {
                     <h3 className='subtitle__styleguide'>Secundary buttons</h3>
                     <div className='pattern__group-styleguide'>
                         <div className='guide__elements-styleguide'>
-                            <Btn type="btn-secundary" size="small" text="Ver más"/>
+                            <Btn type="btn-secundary" size="btn-small">Ver más</Btn>
                             <h4 className='text__explaining'>Size small</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <Btn type="btn-secundary" text="Ver más"/>
+                            <Btn type="btn-secundary">Ver más</Btn>
                             <h4 className='text__explaining'>Size default</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <Btn type="btn-secundary" size="big" text="Ver más"/>
+                            <Btn type="btn-secundary" size="btn-big">Ver más</Btn>
                             <h4 className='text__explaining'>Size big</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <Btn type="btn-secundary" size="xbig" text="Ver más"/>
+                            <Btn type="btn-secundary" size="btn-xbig">Ver más</Btn>
                             <h4 className='text__explaining'>Size xbig</h4>
                         </div>
                     </div>
@@ -87,19 +86,31 @@ export default function Styleguide() {
                     <p>Light button text</p>
                     <div className='pattern__group-styleguide'>
                         <div className='guide__elements-styleguide'>
-                            <BtnText variant="btn-text__light" size="small" icon={<IconBtnText variantbg="icon-light-bg" variantbr="icon-dark-br" icon={<IconArrowRight size="xx-small" fill="gray__darker"/>} />} text="Ver proyecto"/>
+                            <Btn type="btn-text__light" size="btn-small">
+                                <IconBtnText variantbg="icon-light-bg" variantbr="icon-dark-br" icon={<IconArrowRight size="xx-small" fill="gray__darker"/>}/>
+                                Ver proyecto
+                            </Btn>
                             <h4 className='text__explaining'>Size small</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <BtnText variant="btn-text__light" icon={<IconBtnText variantbg="icon-light-bg" variantbr="icon-dark-br" icon={<IconArrowRight size="xx-small" fill="gray__darker"/>} />} text="Ver proyecto"/>
+                            <Btn type="btn-text__light">
+                                <IconBtnText variantbg="icon-light-bg" variantbr="icon-dark-br" icon={<IconArrowRight size="xx-small" fill="gray__darker"/>} />
+                                Ver proyecto
+                            </Btn>
                             <h4 className='text__explaining'>Size default</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <BtnText variant="btn-text__light" size="big" icon={<IconBtnText variantbg="icon-light-bg" variantbr="icon-dark-br" icon={<IconArrowRight size="xx-small" fill="gray__darker"/>} />} text="Ver proyecto"/>
+                            <Btn type="btn-text__light" size="btn-big">
+                                <IconBtnText variantbg="icon-light-bg" variantbr="icon-dark-br" icon={<IconArrowRight size="xx-small" fill="gray__darker"/>} />
+                                Ver proyecto
+                            </Btn>
                             <h4 className='text__explaining'>Size big</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <BtnText variant="btn-text__light" size="xbig" icon={<IconBtnText variantbg="icon-light-bg" variantbr="icon-dark-br" icon={<IconArrowRight size="xx-small" fill="gray__darker"/>} />} text="Ver proyecto"/>
+                            <Btn type="btn-text__light" size="btn-xbig">
+                                <IconBtnText variantbg="icon-light-bg" variantbr="icon-dark-br" icon={<IconArrowRight size="xx-small" fill="gray__darker"/>} />
+                                Ver proyecto
+                            </Btn>
                             <h4 className='text__explaining'>Size xbig</h4>
                         </div>
                     </div>
@@ -109,19 +120,31 @@ export default function Styleguide() {
                     <p>Dark button text</p>
                     <div className='pattern__group-styleguide'>
                         <div className='guide__elements-styleguide'>
-                            <BtnText variant="btn-text__dark" size="small" icon={<IconBtnText variantbg="icon-dark-bg" variantbr="icon-light-br" icon={<IconArrowRight size="xx-small" fill="peach__lighter"/>} />} text="Ver proyecto"/>
+                            <Btn type="btn-text__dark" size="btn-small">
+                                <IconBtnText variantbg="icon-dark-bg" variantbr="icon-light-br" icon={<IconArrowRight size="xx-small" fill="peach__lighter"/>} />
+                                Ver proyecto
+                            </Btn>
                             <h4 className='text__explaining'>Size small</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <BtnText variant="btn-text__dark" icon={<IconBtnText variantbg="icon-dark-bg" variantbr="icon-light-br" icon={<IconArrowRight size="xx-small" fill="peach__lighter"/>} />} text="Ver proyecto"/>
+                            <Btn type="btn-text__dark">
+                                <IconBtnText variantbg="icon-dark-bg" variantbr="icon-light-br" icon={<IconArrowRight size="xx-small" fill="peach__lighter"/>} />
+                                Ver proyecto
+                            </Btn>
                             <h4 className='text__explaining'>Size default</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <BtnText variant="btn-text__dark" size="big" icon={<IconBtnText variantbg="icon-dark-bg" variantbr="icon-light-br" icon={<IconArrowRight size="xx-small" fill="peach__lighter"/>} />} text="Ver proyecto"/>
+                            <Btn type="btn-text__dark" size="btn-big">
+                                <IconBtnText variantbg="icon-dark-bg" variantbr="icon-light-br" icon={<IconArrowRight size="xx-small" fill="peach__lighter"/>} />
+                                Ver proyecto
+                            </Btn>
                             <h4 className='text__explaining'>Size big</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <BtnText variant="btn-text__dark" size="xbig" icon={<IconBtnText variantbg="icon-dark-bg" variantbr="icon-light-br" icon={<IconArrowRight size="xx-small" fill="peach__lighter"/>} />} text="Ver proyecto"/>
+                            <Btn type="btn-text__dark" size="btn-xbig">
+                                <IconBtnText variantbg="icon-dark-bg" variantbr="icon-light-br" icon={<IconArrowRight size="xx-small" fill="peach__lighter"/>} />
+                                Ver proyecto
+                            </Btn>
                             <h4 className='text__explaining'>Size xbig</h4>
                         </div>
                     </div>
@@ -277,7 +300,11 @@ export default function Styleguide() {
             </section>
             <section className='section__styleguide'>
                 <h2 className='title__styleguide'>Mensaje del Sidebar</h2>
-                <SidebarMessage name='Gugli' message='Estoy disponible para trabajar.' btntext='Contáctame'/>
+                <Notification 
+                    name='Gugli' 
+                    text='Estoy disponible para trabajar.' 
+                    btntext='Contáctame'
+                />
             </section>
 
 

@@ -1,0 +1,9 @@
+@import '../../scss/global.scss';
+
+.card-weather {
+    border-radius: 22px;
+    background-color: $gray__darker;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+}

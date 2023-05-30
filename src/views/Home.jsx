@@ -1,5 +1,5 @@
 import Btn from "../components/buttons/Btn";
-import Card from "../components/card/Card";
+import Card from "../components/cards/Card";
 import IconArrowRight from "../components/icons/IconArrowRight";
 import IconBtnText from "../components/icons/IconBtnText";
 import IconCodepen from "../components/icons/IconCodepen";
@@ -23,7 +23,7 @@ export default function Home() {
             <Input  type="input-row" label="Nombre" placeholder="Escribe tu nombre">
             </Input>
 
-            <Card>
+            <Card type="card-weather">
                 <Searcher />
                 <Weather />
             </Card>
