@@ -1,24 +1,24 @@
 @import '../../scss/global.scss';
 
-[sizeicon="xx-small"] {
+.icon-xx-small {
     @include icon-size(xxxx-small, auto)
 }
-[sizeicon="x-small"] {
+.icon-x-small {
     @include icon-size(xxx-small, auto)
 }
-[sizeicon="small"] {
+.icon-small {
     @include icon-size(xx-small, auto)
 }
-[sizeicon="normal"] {
+.icon-normal {
     @include icon-size(x-small, auto)
 }
-[sizeicon="big"] {
+.icon-big {
     @include icon-size(medium, auto)
 }
-[sizeicon="x-big"] {
+.icon-x-big {
     @include icon-size(x-medium, auto)
 }
-[sizeicon="xx-big"] {
+.icon-xx-big {
     @include icon-size(normal, auto)
 }
 
@@ -65,7 +65,7 @@
     width: 100%;
 }
 
-[sizeicondoc], .icon-flower {
+[class^="icondoc-"], .icon-flower {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,7 +76,7 @@
         margin: 0;
     }
 }
-[sizeicondoc="small"] {
+.icondoc-small {
     flex-direction: row;
     align-items: flex-end;
     width: fit-content;
@@ -89,7 +89,7 @@
         }
     }
 }
-[sizeicondoc="default"] {
+.icondoc-default {
     & > .icon__doc {
         @include size-components(sizeComp(small) sizeComp(xx-small), xx-small);
         @include icon-size(x-medium, sizeIcon(normal));
@@ -99,7 +99,7 @@
         }
     }
 }
-[sizeicondoc="big"] {
+.icondoc-big {
     @include size-components(0, normal, normal, min-content);
     & > .icon__doc {
         @include size-components(sizeComp(x-big) sizeComp(small), small);
@@ -110,7 +110,7 @@
         }
     }
 }
-[sizeicondoc="x-big"] {
+.icondoc-x-big {
     @include size-components(0, big, x-normal, min-content);
     & > .icon__doc {
         @include size-components(sizeComp(xx-big) sizeComp(medium), x-normal);
@@ -121,60 +121,60 @@
         }
     }
 }
-[sizeflower="xx-small"] {
+.flower-xx-small {
     @include icon-size (medium, sizeIcon(medium))
 }
-[sizeflower="x-small"] {
+.flower-x-small {
     @include icon-size (x-medium, sizeIcon(x-medium))
 }
-[sizeflower="small"] {
+.flower-small {
     @include icon-size (x-normal, sizeIcon(x-normal))
 }
-[sizeflower="medium"] {
+.flower-medium {
     @include icon-size (xxx-normal, sizeIcon(xxx-normal))
 }
-[sizeflower="big"] {
+.flower-big {
     @include icon-size (big, sizeIcon(big))
 }
-[sizeflower="x-big"] {
+.flower-x-big {
     @include icon-size (xx-big, sizeIcon(xx-big))
 }
-[sizeflower="huge"] {
+.flower-huge {
     @include icon-size (xxxx-big, sizeIcon(xxxx-big))
 }
 
-[sizeflowerlarge="small"] {
+.flowerlarge-small {
     @include icon-size (medium, sizeIcon(x-medium))
 }
-[sizeflowerlarge="medium"] {
+.flowerlarge-medium {
     @include icon-size (xx-big, sizeIcon(xxx-normal))
 }
-[sizeflowerlarge="big"] {
+.flowerlarge-big {
     @include icon-size (xxxx-big, sizeIcon(big))
 }
 
-[sizeflowerxlarge="small"] {
+.flowerxlarge-small {
     @include icon-size (xxx-big, sizeIcon(x-medium))
 }
-[sizeflowerxlarge="medium"] {
+.flowerxlarge-medium {
     @include icon-size (huge, sizeIcon(xxx-normal))
 }
-[sizeflowerxlarge="big"] {
+.flowerxlarge-big {
     @include icon-size (x-huge, sizeIcon(big))
 }
 
-[sizelogo="x-small"] {
-    @include icon-size(x-small, auto);
+.logo-x-small {
+    @include icon-size(medium, auto);
 }
 
-[sizelogo="small"] {
+.logo-small {
     @include icon-size(x-medium, auto);
 }
 
-[sizelogo="default"] {
+.logo-default {
     @include icon-size(xxx-big, auto);
 }
-[sizelogo="big"] {
+.logo-big {
     width: 654px;
     height: auto;
 }

@@ -33,6 +33,7 @@ export const ICONMAP = {
 }
 
 export default function Icon(props) {
+    
     return ICONMAP[props.name];
 
 }

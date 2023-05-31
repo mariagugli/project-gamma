@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;400;900&display=swap');
  h1, .h1 {
-   font-weight: fw(extrabold);
-   font-size: fs(xx-big);
+  font-weight: fw(extrabold);
+  font-size: fs(xx-big);
  }
 
  h2,
@@ -10,23 +10,37 @@
  h5,
  h6,
  p {
-   font-weight: fw(regular);
+  font-weight: fw(regular);
  }
 
  h2, .h2 {
-   font-size: fs(x-big);
+  font-size: fs(x-big);
  }
  h3, .h3 {
-   font-size: fs(big);
+  font-size: fs(big);
  }
  h4, .h4 {
-   font-size: fs(x-normal);
+  font-size: fs(x-normal);
  }
  h5, .h5, p {
-   font-size: fs(normal);
+  font-size: fs(normal);
  }
  h6, .h6 {
-   font-size: fs(medium);
+  font-size: fs(medium);
+ }
+
+ .title-web {
+  font-size: fs(big);
+  @include mq() {
+    font-size: fs(xx-big);
+  }
+ }
+
+ .title-web::before {
+  content: "{";
+ }
+ .title-web::after {
+  content: "}";
  }
 
 

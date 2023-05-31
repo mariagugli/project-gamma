@@ -36,6 +36,15 @@ body {
   border-radius: 42px;
 }
 
+.main__blockpage {
+  width: 100%;
+  height: calc(100% - 1.5625rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 1.5625rem;
+}
+
 /*@media (prefers-color-scheme: light) {
     :root {
       color: #213547;

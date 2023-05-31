@@ -1,0 +1,36 @@
+.section__blockpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include mq() {
+        padding: 0 sizeComp(huge);
+    }
+}
+
+.section__blockpage-title {
+    padding-bottom: sizeComp(xxx-big);
+    & > svg {
+        @include mq() {
+            width: 70%;
+            height: auto;
+        }
+        @include mq($bp-large) {
+            width: 584.5px;
+            height: auto;
+        }
+        & > path {
+            fill: $orange;
+        }
+    }
+}
+
+.section__blockpage-data {
+    & > h2 {
+        font-size: fs(x-normal);
+    }
+    & > h3 {
+        font-size: fs(xxx-big);
+        font-weight: fw(light);
+        margin: 0;
+    }
+}

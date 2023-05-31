@@ -1,19 +1,15 @@
 import './Icon.scss';
 
-    function IconDoc({ classDoc, classLine, size, text }) {
-        return (
-            <div sizeicondoc={size}>
-                <div className={classDoc ? `icon__doc ${classDoc}` : "icon__doc color-bg-blue__dark"}>
-                    <span className={classLine ? `line__icon__doc ${classLine}` : "line__icon__doc color-bg-white"}></span>
-                    <span className={classLine ? `line__icon__doc ${classLine}` : "line__icon__doc color-bg-white"}></span>
-                    <span className={classLine ? `line__icon__doc ${classLine}` : "line__icon__doc color-bg-white"}></span>
-                    <span className={classLine ? `line__icon__doc ${classLine}` : "line__icon__doc color-bg-white"}></span>
-                    <span className={classLine ? `line__icon__doc ${classLine}` : "line__icon__doc color-bg-white"}></span>
-                    <span className={classLine ? `line__icon__doc ${classLine}` : "line__icon__doc color-bg-white"}></span>
-                </div>
-                {text}
-            </div>
-        )
-    }
-
-export default IconDoc
+export default function IconDoc(props) {
+    return <div className={`${props.type !== undefined ? props.type : ''} ${props.size}`}>
+        <div className={props.classDoc ? `icon__doc ${props.classDoc}` : "icon__doc color-bg-blue__dark"}>
+            <span className={props.classLine ? `line__icon__doc ${props.classLine}` : "line__icon__doc color-bg-white"}></span>
+            <span className={props.classLine ? `line__icon__doc ${props.classLine}` : "line__icon__doc color-bg-white"}></span>
+            <span className={props.classLine ? `line__icon__doc ${props.classLine}` : "line__icon__doc color-bg-white"}></span>
+            <span className={props.classLine ? `line__icon__doc ${props.classLine}` : "line__icon__doc color-bg-white"}></span>
+            <span className={props.classLine ? `line__icon__doc ${props.classLine}` : "line__icon__doc color-bg-white"}></span>
+            <span className={props.classLine ? `line__icon__doc ${props.classLine}` : "line__icon__doc color-bg-white"}></span>
+        </div>
+        {props.children}
+    </div>
+}

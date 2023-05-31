@@ -19,9 +19,8 @@
     [fill="#{$key}"] {
         fill: $value;
     }
-    [stroke="#{$key}"] {
-        stroke: $value;
-        stroke-width: 2px;
+    .fill-#{$key} {
+        fill: $value;
     }
     
 }
@@ -46,4 +45,11 @@
 .flex-column {
     display: flex;
     flex-direction: column;
+}
+
+.hide {
+    display: none;
+}
+.show {
+    display: block;
 }

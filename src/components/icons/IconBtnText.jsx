@@ -1,16 +1,9 @@
 import './Icon.scss';
 
-    function IconBtnText({variantbg, variantbr, icon}) {
-        return (
-            <>
-                <span className={variantbg}>
-                    <span className={variantbr}>
-                        {icon}
-                    </span>
-                </span>
-                
-            </>
-        )
-    }
-
-export default IconBtnText
+export default function IconBtnText(props) {
+    return <span className={props.bg}>
+        <span className={props.br}>
+            {props.children}
+        </span>
+    </span>
+}
