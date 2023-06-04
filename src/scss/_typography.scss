@@ -29,23 +29,6 @@
   font-size: fs(medium);
  }
 
- .title-web {
-  font-size: fs(big);
-  @include mq() {
-    font-size: fs(xx-big);
-  }
- }
-
- .title-web::before {
-  content: "{";
- }
- .title-web::after {
-  content: "}";
- }
-
-
-
-
  /* 
  tres fuentes sin contar los encabezados -textos pequeños, medianos y (por si hay) grandes.
 

@@ -18,14 +18,14 @@ import IconDoc from '../components/icons/IconDoc'
 import IconFlower from '../components/icons/IconFlower'
 import IconFlowerLarge from '../components/icons/IconFlower-large'
 import IconFlowerXlarge from '../components/icons/IconFlower-xlarge'
-import InputForm from '../components/inputs/InputForm'
-import InputToggleSwitch from '../components/inputs/InputToggleSwitch'
+import Input from '../components/inputs/Input'
 import Tag from '../components/Tags/Tag'
 import Message from '../components/messages/Message'
 import Topbar from '../components/topbar/Topbar'
 import Notification from '../components/notification/Notification'
 import Weather from '../components/weather/Weather'
-
+import Footer from '../components/footer/Footer'
+import Card from '../components/cards/Card'
 
 
 
@@ -39,8 +39,8 @@ export default function Styleguide() {
                     <h3 className='subtitle__styleguide'>Primary buttons</h3>
                     <div className='pattern__group-styleguide'>
                         <div className='guide__elements-styleguide'>
-                            <Btn type="btn-primary" size="btn-small">
-                                <IconGithub size="xx-small" fill="white"/>
+                            <Btn type="btn-primary" size="small">
+                                <IconGithub size="icon-xx-small" fill="fill-white"/>
                                 Enviar
                             </Btn>
                             <h4 className='text__explaining'>Size small</h4>
@@ -50,11 +50,11 @@ export default function Styleguide() {
                             <h4 className='text__explaining'>Size default</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <Btn type="btn-primary" size="btn-big">Enviar</Btn>
+                            <Btn type="btn-primary" size="big">Enviar</Btn>
                             <h4 className='text__explaining'>Size big</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <Btn type="btn-primary" size="btn-xbig">Enviar</Btn>
+                            <Btn type="btn-primary" size="xbig">Enviar</Btn>
                             <h4 className='text__explaining'>Size xbig</h4>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ export default function Styleguide() {
                     <h3 className='subtitle__styleguide'>Secundary buttons</h3>
                     <div className='pattern__group-styleguide'>
                         <div className='guide__elements-styleguide'>
-                            <Btn type="btn-secundary" size="btn-small">Ver más</Btn>
+                            <Btn type="btn-secundary" size="small">Ver más</Btn>
                             <h4 className='text__explaining'>Size small</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
@@ -72,11 +72,11 @@ export default function Styleguide() {
                             <h4 className='text__explaining'>Size default</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <Btn type="btn-secundary" size="btn-big">Ver más</Btn>
+                            <Btn type="btn-secundary" size="big">Ver más</Btn>
                             <h4 className='text__explaining'>Size big</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <Btn type="btn-secundary" size="btn-xbig">Ver más</Btn>
+                            <Btn type="btn-secundary" size="xbig">Ver más</Btn>
                             <h4 className='text__explaining'>Size xbig</h4>
                         </div>
                     </div>
@@ -86,29 +86,37 @@ export default function Styleguide() {
                     <p>Light button text</p>
                     <div className='pattern__group-styleguide'>
                         <div className='guide__elements-styleguide'>
-                            <Btn type="btn-text__light" size="btn-small">
-                                <IconBtnText variantbg="icon-light-bg" variantbr="icon-dark-br" icon={<IconArrowRight size="xx-small" fill="gray__darker"/>}/>
+                            <Btn type="btn-text__light" size="small">
+                                <IconBtnText bg="icon-light-bg" br="icon-dark-br">
+                                    <IconArrowRight size="icon-xx-small" fill="fill-gray__darker"/>
+                                </IconBtnText>
                                 Ver proyecto
                             </Btn>
                             <h4 className='text__explaining'>Size small</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
                             <Btn type="btn-text__light">
-                                <IconBtnText variantbg="icon-light-bg" variantbr="icon-dark-br" icon={<IconArrowRight size="xx-small" fill="gray__darker"/>} />
+                                <IconBtnText bg="icon-light-bg" br="icon-dark-br">
+                                    <IconArrowRight size="icon-xx-small" fill="fill-gray__darker"/>
+                                </IconBtnText>
                                 Ver proyecto
                             </Btn>
                             <h4 className='text__explaining'>Size default</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <Btn type="btn-text__light" size="btn-big">
-                                <IconBtnText variantbg="icon-light-bg" variantbr="icon-dark-br" icon={<IconArrowRight size="xx-small" fill="gray__darker"/>} />
+                            <Btn type="btn-text__light" size="big">
+                                <IconBtnText bg="icon-light-bg" br="icon-dark-br">
+                                    <IconArrowRight size="icon-xx-small" fill="fill-gray__darker"/>
+                                </IconBtnText>
                                 Ver proyecto
                             </Btn>
                             <h4 className='text__explaining'>Size big</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <Btn type="btn-text__light" size="btn-xbig">
-                                <IconBtnText variantbg="icon-light-bg" variantbr="icon-dark-br" icon={<IconArrowRight size="xx-small" fill="gray__darker"/>} />
+                            <Btn type="btn-text__light" size="xbig">
+                                <IconBtnText bg="icon-light-bg" br="icon-dark-br">
+                                    <IconArrowRight size="icon-xx-small" fill="fill-gray__darker"/>
+                                </IconBtnText>
                                 Ver proyecto
                             </Btn>
                             <h4 className='text__explaining'>Size xbig</h4>
@@ -120,29 +128,37 @@ export default function Styleguide() {
                     <p>Dark button text</p>
                     <div className='pattern__group-styleguide'>
                         <div className='guide__elements-styleguide'>
-                            <Btn type="btn-text__dark" size="btn-small">
-                                <IconBtnText variantbg="icon-dark-bg" variantbr="icon-light-br" icon={<IconArrowRight size="xx-small" fill="peach__lighter"/>} />
+                            <Btn type="btn-text__dark" size="small">
+                                <IconBtnText bg="icon-dark-bg" br="icon-light-br">
+                                    <IconArrowRight size="icon-xx-small" fill="fill-peach__lighter"/>
+                                </IconBtnText>
                                 Ver proyecto
                             </Btn>
                             <h4 className='text__explaining'>Size small</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
                             <Btn type="btn-text__dark">
-                                <IconBtnText variantbg="icon-dark-bg" variantbr="icon-light-br" icon={<IconArrowRight size="xx-small" fill="peach__lighter"/>} />
+                                <IconBtnText bg="icon-dark-bg" br="icon-light-br">
+                                    <IconArrowRight size="icon-xx-small" fill="fill-peach__lighter"/>
+                                </IconBtnText>
                                 Ver proyecto
                             </Btn>
                             <h4 className='text__explaining'>Size default</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <Btn type="btn-text__dark" size="btn-big">
-                                <IconBtnText variantbg="icon-dark-bg" variantbr="icon-light-br" icon={<IconArrowRight size="xx-small" fill="peach__lighter"/>} />
+                            <Btn type="btn-text__dark" size="big">
+                                <IconBtnText bg="icon-dark-bg" br="icon-light-br">
+                                    <IconArrowRight size="icon-xx-small" fill="fill-peach__lighter"/>
+                                </IconBtnText>
                                 Ver proyecto
                             </Btn>
                             <h4 className='text__explaining'>Size big</h4>
                         </div>
                         <div className='guide__elements-styleguide'>
-                            <Btn type="btn-text__dark" size="btn-xbig">
-                                <IconBtnText variantbg="icon-dark-bg" variantbr="icon-light-br" icon={<IconArrowRight size="xx-small" fill="peach__lighter"/>} />
+                            <Btn type="btn-text__dark" size="xbig">
+                                <IconBtnText bg="icon-dark-bg" br="icon-light-br">
+                                    <IconArrowRight size="icon-xx-small" fill="fill-peach__lighter"/>
+                                </IconBtnText>
                                 Ver proyecto
                             </Btn>
                             <h4 className='text__explaining'>Size xbig</h4>
@@ -171,27 +187,27 @@ export default function Styleguide() {
                             <div className='width-100'>
                                 <h3 className='subtitle__styleguide'>Redes sociales</h3>
                                 <div className='group__elements--row'>
-                                    <IconGithub size="x-small"/>
-                                    <IconLinkedIn size="x-small"/>
-                                    <IconCodepen size="x-small"/>
+                                    <IconGithub size="icon-x-small"/>
+                                    <IconLinkedIn size="icon-x-small"/>
+                                    <IconCodepen size="icon-x-small"/>
                                 </div>
                             </div>
                             <div className='width-100'>
                                 <h3 className='subtitle__styleguide'>Arrows</h3>
                                 <div className='group__elements--row'>
-                                    <IconArrowRight size="x-small"/>
-                                    <IconArrowLeft size="x-small"/>
-                                    <IconArrowUp size="x-small"/>
-                                    <IconArrowDown size="x-small"/>
+                                    <IconArrowRight size="icon-x-small"/>
+                                    <IconArrowLeft size="icon-x-small"/>
+                                    <IconArrowUp size="icon-x-small"/>
+                                    <IconArrowDown size="icon-x-small"/>
                                 </div>
                             </div>
                             <div className='width-100'>
                                 <h3 className='subtitle__styleguide'>Extras decorativos</h3>
                                 <div className='group__elements--row'>
-                                    <IconSun size="x-small"/>
-                                    <IconSearch size="x-small"/>
-                                    <IconPlus size="x-small"/>
-                                    <IconMinus size="x-small"/>
+                                    <IconSun size="icon-x-small"/>
+                                    <IconSearch size="icon-x-small"/>
+                                    <IconPlus size="icon-x-small"/>
+                                    <IconMinus size="icon-x-small"/>
                                 </div>
                             </div>
                         </article>
@@ -219,25 +235,39 @@ export default function Styleguide() {
                 <article className='articles__styleguide'>
                     <h3 className='subtitle__styleguide'>Docs</h3>
                     <div className='pattern__group-styleguide'>
-                        <IconDoc size="small" text="Este es un documento"/>
-                        <IconDoc size="default" text="Este es un documento"/>
-                        <IconDoc size="big" text="Este es un documento"/>
-                        <IconDoc size="x-big" text="Este es un documento"/>
+                        <IconDoc size="icondoc-small">
+                            Esto es un documento
+                        </IconDoc>
+                        <IconDoc size="icondoc-default">
+                            Esto es un documento
+                        </IconDoc>
+                        <IconDoc size="icondoc-big">
+                            Esto es un documento
+                        </IconDoc>
+                        <IconDoc size="icondoc-x-big">
+                            Esto es un documento
+                        </IconDoc>
                     </div>
                 </article>
                 <article className='articles__styleguide'>
                     <h3 className='subtitle__styleguide'>Flowers</h3>
                     <div className='pattern__group-styleguide'>
-                        <IconFlower size="big" fill="yellow" text="Hola" />
-                        <IconFlowerLarge size="big" fill="yellow" text="Hola" />
-                        <IconFlowerXlarge size="big" fill="yellow" text="Hola" />
+                        <IconFlower size="flower-big" fill="fill-yellow">
+                            Proyecto
+                        </IconFlower>
+                        <IconFlowerLarge size="flowerlarge-big" fill="fill-yellow">
+                            Proyecto
+                        </IconFlowerLarge>
+                        <IconFlowerXlarge size="flowerxlarge-big" fill="fill-yellow">
+                            Proyecto
+                        </IconFlowerXlarge>
                     </div>
                 </article>
                 <article className='articles__styleguide'>
                     <h3 className='subtitle__styleguide'>Logo</h3>
                     <div className='pattern__group-styleguide'>
-                        <IconLogo size="small" fill="orange"/>
-                        <IconLogo size="big" fill="orange"/>
+                        <IconLogo size="logo-small" fill="fill-orange"/>
+                        <IconLogo size="logo-big" fill="fill-orange"/>
                     </div>
                 </article>
             </section>
@@ -245,15 +275,15 @@ export default function Styleguide() {
                 <h2 className='title__styleguide'>Inputs</h2>
                 <article className='articles__styleguide'>
                     <h3>Inputs forms</h3>
-                    <InputForm variant='input-row' label='Nombre' placeholder='Escribe tu nombre'type='text'/>
-                    <InputForm variant='input-column' label='Email' placeholder='Escribe tu email'type='email'/>
-                    <InputForm label='Nombre' placeholder='Escribe tu nombre'type='checkbox'/>
-                    <InputForm label='Nombre' placeholder='Escribe tu nombre'type='radio'/>
+                    <Input isInputForm={true} type='input-row' label='Nombre' placeholder='Escribe tu nombre' inputtype='text'/>
+                    <Input isInputForm={true} type='input-column' label='Email' placeholder='Escribe tu email' inputtype='email'/>
+                    <Input isInputForm={true} label='Nombre' placeholder='Escribe tu nombre' inputtype='checkbox'/>
+                    <Input isInputForm={true} label='Nombre' placeholder='Escribe tu nombre' inputtype='radio'/>
                 </article>
                 <article className='articles__styleguide'>
                     <h3>Toggle Switch</h3>
-                    <InputToggleSwitch />
-                    <InputToggleSwitch variant='switch-big' slider='slider-big'/>
+                    <Input isToggle={true} />
+                    <Input isToggle={true} switch='switch-big' slider='slider-big'/>
                 </article>
             </section>
             <div className='group__sections-styleguide'>
@@ -305,6 +335,13 @@ export default function Styleguide() {
                     text='Estoy disponible para trabajar.' 
                     btntext='Contáctame'
                 />
+            </section>
+            <section className='section__styleguide'>
+                <Footer />
+            </section>
+
+            <section className='section__styleguide'>
+                <Card />
             </section>
 
 

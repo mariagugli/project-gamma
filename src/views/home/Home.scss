@@ -1,0 +1,224 @@
+@import '../../scss/global.scss';
+
+.main__home {
+    width: calc(100% - 0.625rem);
+    height: calc(100% - 3.875rem);
+    padding: sizeComp(x-normal) sizeComp(xxx-small) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    @include mq($bp-xsmall) {
+        height: calc(100% - 5rem);
+        padding: sizeComp(xxx-big) sizeComp(xxx-small) 0;
+    }
+    @include mq($bp-small) {
+        height: calc(100% - 5rem);
+        padding: sizeComp(xxx-small) sizeComp(xxx-small) 0;
+    }
+    @include mq($bp-extralarge) {
+        flex-direction: row;
+        position: relative;
+        justify-content: center;
+    }
+}
+.allsections__home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: sizeComp(x-normal);
+    height: 80%;
+    @include mq($bp-xsmall) {
+        height: auto;
+        padding: 0 sizeComp(xx-big);
+    }
+    @include mq($bp-small) {
+        padding: 0 5rem;
+        width: calc(100% - 10rem);
+    }
+    @include mq() {
+        padding: 0 8rem;
+        width: calc(100% - 16rem);
+    }
+    @include mq($bp-large) {
+        padding: 0 8rem 0.75rem;
+        width: calc(752px - 16rem);
+    }
+    @include mq($bp-extralarge) {
+        padding: 0 8rem;
+        width: calc(752px - 10rem);
+        height: 100%;
+    }
+}
+
+.section__home {
+    width: 100%;
+    & a {
+        text-decoration: none;
+        color: $black;
+        display: flex;
+        width: fit-content;
+    }
+}
+.section__btnabout {
+    height: 25%;
+    & > a {
+        width: 50%;
+        @include mq($bp-large) {
+            width: 248px;
+        }
+        @include mq($bp-extralarge) {
+            width: 50%;
+        }
+    }
+}
+.section__groupflowers {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: sizeComp(x-small);
+    @include mq($bp-xsmall) {
+        gap: sizeComp(medium);
+    }
+    @include mq($bp-large) {
+        gap: sizeComp(xx-big);
+    }
+}
+.section__btnminiprojects {
+    height: 25%;
+    & > a {
+        width: 100%;
+        @include mq($bp-large) {
+            width: 497px;
+        }
+        @include mq($bp-extralarge) {
+            width: 100%;
+        }
+    }
+}
+
+//  ARTICLES    //
+.btn__groups__home {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    @include mq($bp-xsmall) {
+        gap: sizeComp(x-normal);
+    }
+    @include mq() {
+        gap: 0;
+    }
+    @include mq($bp-extralarge) {
+        gap: sizeComp(x-small);
+        width: auto;
+    }
+}
+
+//  DIVS        //
+
+.flowergroup-line {
+    display: flex;
+    gap: sizeComp(medium);
+    height: 50%;
+    @include mq($bp-large) {
+        justify-content: center;
+        gap: sizeComp(xx-big);
+    }
+    @include mq($bp-large) {
+        justify-content: center;
+        gap: 0;
+    }
+    
+}
+
+//  BTNS y LINKS   //
+
+.btn--home {
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: none;
+    color: $black;
+}
+.btn__bigflower--home {
+    width: 50%;
+    @include mq($bp-large) {
+        width: 292px;
+    }
+    @include mq($bp-extralarge) {
+        width: 100%;
+    }
+}
+.flower-home {
+    font-size: fs(small);
+    height: 100%;
+    @include mq($bp-xsmall) {
+        font-size: fs(normal);
+    }
+}
+
+.flower-big {
+    min-width: 120px;
+    width: 100%;
+    @include mq($bp-xsmall) {
+        min-width: 161px;
+        width: 100%;
+    }
+}
+
+.flower-default {
+    min-width: 47px;
+    width: 90%;
+    @include mq($bp-xsmall) {
+        min-width: 62px;
+        width: 100%;
+    }
+    @include mq() {
+        width: 80%;
+    }
+    @include mq($bp-large) {
+        width: 91px;
+    }
+    @include mq($bp-large) {
+        width: 80%;
+    }
+}
+
+.flower-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.flower-home > p, .flower-home > h1 {
+    margin: 0;
+    font-size: fs(small);
+    @include mq($bp-xsmall) {
+        font-size: fs(normal);
+    }
+}
+
+//  ICONS   //
+
+.docs__home {
+    display: flex;
+    flex-direction: column;
+    @include size-components(0, xx-small, normal, min-content);
+    @include mq($bp-extralarge) {
+        @include size-components(0, normal, x-normal, min-content);
+    & > .icon__doc {
+        @include size-components(sizeComp(x-big) sizeComp(small), small);
+        @include icon-size(xx-normal, sizeIcon(xxx-normal));
+        border-radius: 6px;
+        & > .line__icon__doc {
+            height: 3px;
+        }
+    }
+    }
+}
+.open {
+    display: flex;
+}

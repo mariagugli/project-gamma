@@ -1,7 +1,8 @@
-$bp-small: 600px;
+$bp-xsmall: 390px;
+$bp-small: 565px;
 $bp-medium: 700px;
-$bp-large: 1030px;
-$bp-extralarge: 1190px;
+$bp-large: 845px;
+$bp-extralarge: 1210px;
 
 @mixin mq($bp: $bp-medium, $bp-direction: min-width) {
   @media all and ($bp-direction: $bp) {

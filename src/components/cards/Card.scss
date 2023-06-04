@@ -1,5 +1,32 @@
 @import '../../scss/global.scss';
 
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 22px;
+    display: none;
+    height: fit-content;
+}
+.card.open {
+    display: flex;
+}
+.card-docs, .card-socials {
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px 40px;
+    gap: 40px;
+    position: absolute;
+    width: 292px;
+    left: 0; 
+    right: 0; 
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    @include mq($bp-extralarge) {
+        padding: 70px 50px;
+        width: 416px;
+    }
+}
 .card-weather {
     border-radius: 22px;
     background-color: $gray__darker;

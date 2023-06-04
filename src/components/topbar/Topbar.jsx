@@ -10,7 +10,7 @@ export default function Topbar(props) {
             size='logo-x-small'
             fill="fill-orange"
         />
-        <Btn className='btn-topbar' type='btn-secundary' size='btn-small'>
+        <Btn className='btn-topbar' type='btn-secundary' size='small'>
             <IconPlus size='icon-xx-small' fill='fill-gray__darker'/>
         </Btn>
     </div>

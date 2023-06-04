@@ -1,0 +1,74 @@
+@import '../../scss/global.scss';
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 22px;
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: sizeComp(x-small) sizeComp(small);
+    width: 100%;
+    @include mq($bp-xsmall) {
+        width: calc(100% - 2rem);
+        gap: sizeComp(x-small);
+    }
+    @include mq($bp-small) {
+        width: calc(100% - 12rem);
+        margin: 0 5rem;
+    }
+    @include mq() {
+        width: calc(100% - 18rem);
+        margin: 0 8rem;
+    }
+    @include mq($bp-large) {
+        width: calc(497px - 0.75rem * 2);
+        justify-content: space-around;
+        gap: 0;
+    }
+    @include mq($bp-extralarge) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: sizeComp(x-big) sizeComp(huge);
+        gap: sizeComp(x-normal);
+        width: fit-content;
+        position: absolute;
+        right: 0;
+        margin: 0;
+    }
+}
+
+.btn__footer, .link__footer {
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    color: $black;
+    text-decoration: none;
+    font-size: fs(x-small);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    gap: 0;
+    @include mq($bp-extralarge) {
+        width: auto;
+        font-size: fs(small);
+    }
+}
+.iconflower__footer {
+    width: 50%;
+    height: auto;
+    min-width: 40px;
+    @include mq($bp-xsmall) {
+        width: 60%;
+    }
+    @include mq($bp-large) {
+        width: 55px;
+    }
+    @include mq($bp-extralarge) {
+        width: 62px;
+    }
+}

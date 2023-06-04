@@ -19,14 +19,18 @@
 .btn:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
+.linkbtn {
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
 .btn-small {
   @include size-components(sizeComp('x-small') sizeComp('big'), x-small, medium);
 }
 .btn-default {
   @include size-components(sizeComp('small') sizeComp('x-big'), x-small, x-normal);
 }
-.btn-big {
+.btn-big, .linkbtn--blockpage {
   @include size-components(sizeComp('small') sizeComp('xx-big'), x-small, big);
 }
 .btn-xbig {

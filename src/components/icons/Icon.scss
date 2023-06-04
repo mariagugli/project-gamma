@@ -1,5 +1,10 @@
 @import '../../scss/global.scss';
 
+svg {
+    width: 100%;
+    height: auto;
+}
+
 .icon-xx-small {
     @include icon-size(xxxx-small, auto)
 }
@@ -76,6 +81,7 @@
         margin: 0;
     }
 }
+
 .icondoc-small {
     flex-direction: row;
     align-items: flex-end;
@@ -144,7 +150,7 @@
 }
 
 .flowerlarge-small {
-    @include icon-size (medium, sizeIcon(x-medium))
+    @include icon-size (big, sizeIcon(x-medium))
 }
 .flowerlarge-medium {
     @include icon-size (xx-big, sizeIcon(xxx-normal))
@@ -177,4 +183,8 @@
 .logo-big {
     width: 654px;
     height: auto;
+}
+
+.icon-100 {
+    width: 100%;
 }

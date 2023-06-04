@@ -1,40 +1,41 @@
-import { Link, Route, Routes, useLocation } from 'react-router-dom'
+import { Link, Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import './App.css'
 import './scss/global.scss'
-import Home from './views/Home'
-import Contact from './views/Contact'
+import Home from './views/home/Home'
+import Contact from './views/contact/Contact'
 import Styleguide from './styleguide/Styleguide'
 import IconBtnText from './components/icons/IconBtnText'
 import IconArrowRight from './components/icons/IconArrowRight'
 import Btn from './components/buttons/Btn'
-import Blockpage from './views/Blockpage'
+import Blockpage from './views/blockpage/Blockpage'
 import Topbar from './components/topbar/Topbar'
 
 function App() {
 
   let location = useLocation();
 
+  const navigate = useNavigate();
+    function GoToBlockpage() {
+        
+        setTimeout(() => {
+            
+            navigate('/blockpage', { replace: true });
+        }, 0);
+    }
+
   return (
     <>
       <div className="screen color-bg-blue">
         <header className={location.pathname === "/blockpage" ? 'hide' : ''}>
-          <h1 className={location.pathname === "/styleguide" ? 'show' : 'hide'}>Portfolio Gugli</h1>
           <Topbar />
-          <nav className="nav">
-            <Link to="/blockpage">Blockpage</Link>
-            <Link to="/">Home</Link>
-            <Link to="/contact">Contacto</Link>
-            <Link to="/styleguide">StyleGuide</Link>
-          </nav>
-          
         </header>
         <main className={
           location.pathname === "/blockpage" ? "main__blockpage"
           : location.pathname === "/styleguide" ? "main__styleguide"
           : location.pathname === "/contact" ? "main__contact"
           : location.pathname === "/randomgallery" ? "main__gallery"
-          : ""
+          : "main__home"
 
         }>
           <Routes>
@@ -46,7 +47,7 @@ function App() {
         </main>
       </div>
 
-      <Btn type="no-hovereffect-light" size="btn-big">
+      <Btn isLink={true} to="/blockpage" type="no-hovereffect-light linkbtn--blockpage" size="big">
         <IconBtnText bg="icon-light-bg" br="icon-dark-br">
           <IconArrowRight type="icon-xx-small" fill="fill-peach__lighter"/>
         </IconBtnText>
