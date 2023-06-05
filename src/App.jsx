@@ -5,6 +5,8 @@ import './scss/global.scss'
 import Home from './views/home/Home'
 import Contact from './views/contact/Contact'
 import Styleguide from './styleguide/Styleguide'
+import About from './views/about/About'
+import ImgAbout from './views/about/ImgAbout'
 import IconBtnText from './components/icons/IconBtnText'
 import IconArrowRight from './components/icons/IconArrowRight'
 import Btn from './components/buttons/Btn'
@@ -33,9 +35,9 @@ function App() {
         <main className={
           location.pathname === "/blockpage" ? "main__blockpage"
           : location.pathname === "/styleguide" ? "main__styleguide"
-          : location.pathname === "/contact" ? "main__contact"
+          : location.pathname === "/" ? "main__home"
           : location.pathname === "/randomgallery" ? "main__gallery"
-          : "main__home"
+          : "main"
 
         }>
           <Routes>
@@ -43,6 +45,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/styleguide" element={<Styleguide />} />
             <Route path="/blockpage" element={<Blockpage />} />
+            <Route path="/sobremi" element={<About />} />
+            <Route path="/sobremi/:id" element={<ImgAbout />} />
           </Routes>
         </main>
       </div>
