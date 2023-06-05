@@ -36,6 +36,7 @@ function App() {
           location.pathname === "/blockpage" ? "main__blockpage"
           : location.pathname === "/styleguide" ? "main__styleguide"
           : location.pathname === "/" ? "main__home"
+          : location.pathname === "/sobremi" ? "main__about"
           : location.pathname === "/randomgallery" ? "main__gallery"
           : "main"
 
@@ -46,7 +47,7 @@ function App() {
             <Route path="/styleguide" element={<Styleguide />} />
             <Route path="/blockpage" element={<Blockpage />} />
             <Route path="/sobremi" element={<About />} />
-            <Route path="/sobremi/:id" element={<ImgAbout />} />
+            <Route path="/sobremi/:imgId" element={<ImgAbout />} />
           </Routes>
         </main>
       </div>

@@ -32,7 +32,7 @@ import Card from '../components/cards/Card'
 export default function Styleguide() {
     return <>
         <h1>Style Guide - Portfolio Gugli</h1>
-        <main className='main'>
+        <main className='main__styleguide'>
             <section className='section__styleguide'>
                 <h2 className='title__styleguide'>Buttons</h2>
                 <article className='articles__styleguide'>

@@ -20,7 +20,7 @@ export default function About() {
         </section>
         <section className="section__listimgs">
             {listado.map(img => 
-            <Btn isLink={true} type="linkimg__about" to={img.id}>
+            <Btn isLink={true} type="linkimg__about" to={ '/sobremi/' + img.id} key={img.id}>
                 <div className="foto_about">
                     <img src={img.image} alt={img.title} />
                 </div>
