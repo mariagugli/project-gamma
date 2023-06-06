@@ -1,7 +1,6 @@
 import { Link, useNavigate } from "react-router-dom"
 import Icon from "../../components/icons/Icon"
 import Input from "../../components/inputs/Input"
-import { AnimatePresence } from "framer-motion";
 import './Blockpage.scss'
 
 export default function Blockpage() {

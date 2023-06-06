@@ -1,8 +1,12 @@
 @import '../../scss/global.scss';
 
-[class^="ms-"] {
+.ms-primary, .ms-secondary {
     border-radius: 22px;
     color: $white;
+    margin-bottom: sizeComp(xx-small);
+    @include mq($bp-xsmall) {
+        margin-bottom: sizeComp(normal);
+    }
 }
 
 .ms-primary {

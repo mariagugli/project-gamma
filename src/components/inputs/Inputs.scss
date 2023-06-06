@@ -20,25 +20,25 @@
 .input-small {
     @include size-components(sizeComp(xx-small), x-small, medium);
     & > .input {
-        @include size-components(sizeComp(x-small) sizeComp(medium), x-small, medium);
+        @include size-components(sizeComp(x-small) sizeComp(medium), x-small, medium, 100%);
     }
 }
 .input-default {
     @include size-components(sizeComp(xx-small), small, normal);
     & > .input {
-        @include size-components(sizeComp(small) sizeComp(x-normal), small, normal);
+        @include size-components(sizeComp(small) sizeComp(x-normal), small, normal, 100%);
     }
 }
 .input-big {
     @include size-components(sizeComp(xx-small), medium, x-normal);
     & > .input {
-        @include size-components(sizeComp(x-small) sizeComp(medium), medium, x-normal);
+        @include size-components(sizeComp(x-small) sizeComp(medium), medium, x-normal, 100%);
     }
 }
 .input-x-big {
     @include size-components(sizeComp(xx-small), x-normal, big);
     & > .input {
-        @include size-components(sizeComp(x-small) sizeComp(medium), x-normal, big);
+        @include size-components(sizeComp(x-small) sizeComp(medium), x-normal, big, 100%);
     }
 }
 .switch, .switch-big {

@@ -8,12 +8,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
     @include mq($bp-xsmall) {
-        height: calc(100% - 5rem);
+        height: auto;
         padding: sizeComp(xxx-big) sizeComp(xxx-small) 0;
     }
     @include mq($bp-small) {
-        height: calc(100% - 5rem);
         padding: sizeComp(xxx-small) sizeComp(xxx-small) 0;
     }
     @include mq($bp-extralarge) {
@@ -30,7 +30,7 @@
     height: 80%;
     @include mq($bp-xsmall) {
         height: auto;
-        padding: 0 sizeComp(xx-big);
+        padding: 0 sizeComp(huge);
     }
     @include mq($bp-small) {
         padding: 0 5rem;
@@ -41,7 +41,7 @@
         width: calc(100% - 16rem);
     }
     @include mq($bp-large) {
-        padding: 0 8rem 0.75rem;
+        padding: 0 8rem;
         width: calc(752px - 16rem);
     }
     @include mq($bp-extralarge) {
@@ -81,9 +81,6 @@
     gap: sizeComp(x-small);
     @include mq($bp-xsmall) {
         gap: sizeComp(medium);
-    }
-    @include mq($bp-large) {
-        gap: sizeComp(xx-big);
     }
 }
 .section__btnminiprojects {
@@ -142,12 +139,12 @@
     padding: 0;
     text-decoration: none;
     color: $black;
+    &:hover, &:focus, &:focus-visible{
+        outline: none;
+    }
 }
 .btn__bigflower--home {
     width: 50%;
-    @include mq($bp-large) {
-        width: 292px;
-    }
     @include mq($bp-extralarge) {
         width: 100%;
     }
@@ -164,7 +161,7 @@
     min-width: 120px;
     width: 100%;
     @include mq($bp-xsmall) {
-        min-width: 161px;
+        min-width: 146px;
         width: 100%;
     }
 }
@@ -221,4 +218,14 @@
 }
 .open {
     display: flex;
+}
+
+.link__socials {
+    display: flex;
+    flex-direction: column;
+    gap: sizeComp(x-small);
+    align-items: center;
+    width: 15%;
+    text-decoration: none;
+    color: $gray__darker;
 }

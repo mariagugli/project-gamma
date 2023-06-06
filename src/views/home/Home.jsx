@@ -7,24 +7,50 @@ import './Home.scss'
 import Footer from "../../components/footer/Footer";
 import Card from "../../components/cards/Card";
 import IconDoc from "../../components/icons/IconDoc";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import IconCodepen from "../../components/icons/IconCodepen";
+import IconGithub from "../../components/icons/IconGithub";
+import IconLinkedIn from "../../components/icons/IconLinkedIn";
 
 export default function Home() {
 
-    const [isOpen, setIsOpen] = useState(true);
-    const btnRef = useRef();
+    const [ showProjects, setShowProjects] = useState("card");
+    const [ showSocials, setShowSocials] = useState("card");
 
-    useEffect(() => {
-        const closeDropDown = e => {
-            if (e.path[0] !== btnRef.current) {
-                setIsOpen(false);
-            }
-        };
+    const handleProjects = () => {
+        setShowProjects("opened-card");
+        
+    };
+    const handleSocials = () => {
+        setShowSocials("opened-card");
+        
+    };
 
-        document.body.addEventListener('click', closeDropDown);
+    const useClickOutside = (handler) => {
+        const closeCard = useRef();
 
-        return () => document.body.removeEventListener('click', closeDropDown);
-    }, []);
+        useEffect(() => {
+            const isHandler = (event) => {
+                if(!closeCard.current.contains(event.target)) {
+                    handler();
+                }
+            };
+
+            document.addEventListener("mousedown", isHandler);
+
+            return () => {
+                document.removeEventListener("mousedown", isHandler);
+            };
+        });
+
+        return closeCard;
+    }
+
+    const closeCard = useClickOutside(() => {
+        setShowProjects("card");
+        setShowSocials("card");
+    })
+    
 
     return <>
         <div className="allsections__home">
@@ -63,7 +89,7 @@ export default function Home() {
                         
                     </div>
                 </article>
-                <Btn type="btn--home btn__bigflower--home" size="none" ref={btnRef} onClick={() => setIsOpen(prev => !prev)}>
+                <Btn type="btn--home btn__bigflower--home" size="none" onClick={handleProjects}>
                     <IconFlower type="flower-home" size="flower-big" fill="fill-orange">
                         <p>Proyectos</p>
                     </IconFlower>
@@ -76,24 +102,40 @@ export default function Home() {
                     </IconFlowerXlarge>
                 </Link>
             </section>
+            <section ref={closeCard}>
+                <Card type="card-docs" moreclass={showProjects}>
+                    <Btn isLink={true} type="btn--home" to="/proyectos/aboutme">
+                        <IconDoc type="docs__home" size="icondoc-default">About me</IconDoc>
+                    </Btn>
+                    <Btn isLink={true} type="btn--home" to="/proyectos/genkoa">
+                        <IconDoc type="docs__home" size="icondoc-default">Genkoa</IconDoc>
+                    </Btn>
+                    <Btn isLink={true} type="btn--home" to="/proyectos/">
+                        <IconDoc type="docs__home" size="icondoc-default">Lorem</IconDoc>
+                    </Btn>
+                    <Btn isLink={true} type="btn--home" to="/proyectos/">
+                        <IconDoc type="docs__home" size="icondoc-default">Lorem</IconDoc>
+                    </Btn>
+                </Card>
+                <Card type="card-socials" moreclass={showSocials}>
+                    <a className="link__socials" href="#">
+                        <IconCodepen fill="fill-gray__darker" />
+                        Codepen
+                    </a>
+                    <a className="link__socials" href="#">
+                        <IconGithub fill="fill-gray__darker" />
+                        Github
+                    </a>
+                    <a className="link__socials" href="#">
+                        <IconLinkedIn fill="fill-gray__darker" />
+                        LinkedIn
+                    </a>
+                </Card>
+            </section>
+            
         </div>
 
-        <Card type="card-docs" className={'card' + (isOpen ? "open" : '')}>
-            <Btn isLink={true} type="btn--home" to="/proyectos/aboutme">
-                <IconDoc type="docs__home" size="icondoc-default">About me</IconDoc>
-            </Btn>
-            <Btn isLink={true} type="btn--home" to="/proyectos/genkoa">
-                <IconDoc type="docs__home" size="icondoc-default">Genkoa</IconDoc>
-            </Btn>
-            <Btn isLink={true} type="btn--home" to="/proyectos/">
-                <IconDoc type="docs__home" size="icondoc-default">Lorem</IconDoc>
-            </Btn>
-            <Btn isLink={true} type="btn--home" to="/proyectos/">
-                <IconDoc type="docs__home" size="icondoc-default">Lorem</IconDoc>
-            </Btn>
-        </Card>
-        
-        <Footer />
+        <Footer btnredes={handleSocials} />
         
     </>
 }

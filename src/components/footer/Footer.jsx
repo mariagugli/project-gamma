@@ -14,7 +14,7 @@ export default function Footer(props) {
             <IconFlower type="iconflower__footer" size="flower-small" fill="fill-peach"/>
             Ética
         </Link>
-        <Btn type={props.btnfooter ? `btn__footer ${props.btnfooter}` : "btn__footer"}>
+        <Btn type={props.btnfooter ? `btn__footer ${props.btnfooter}` : "btn__footer"} onClick={props.btnredes}>
             <IconFlower type="iconflower__footer" size="flower-small" fill="fill-purple"/>
             Redes
         </Btn>

@@ -22,7 +22,7 @@ export default function ImgAbout() {
             ? 
                 <img className="img__aboutpost" src={listadoSeleccionado.image} alt={listadoSeleccionado.title} /> 
             : <div className="carruselle">
-                    {listadoSeleccionado.carrusele.map(img => <img className="img__aboutpost--carruselle" key={img.id} src={img}></img>)}
+                    {listadoSeleccionado.carrusele.map(img => <img className="img__aboutpost--carruselle" key={img} src={img}></img>)}
                 </div>
             }
             <p><strong>gugli: </strong>{listadoSeleccionado.description}</p>

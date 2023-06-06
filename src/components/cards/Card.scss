@@ -1,13 +1,13 @@
 @import '../../scss/global.scss';
 
 .card {
+    display: none;
+}
+.opened-card {
+    display: flex;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 22px;
-    display: none;
     height: fit-content;
-}
-.card.open {
-    display: flex;
 }
 .card-docs, .card-socials {
     align-items: flex-start;

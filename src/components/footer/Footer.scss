@@ -53,6 +53,9 @@
     align-items: center;
     width: 25%;
     gap: 0;
+    &:hover, &:focus, &:focus-visible{
+        outline: none;
+    }
     @include mq($bp-extralarge) {
         width: auto;
         font-size: fs(small);

@@ -1,2 +1,70 @@
 @import '../../scss/global.scss';
 
+.title__contact {
+    margin: 0;
+    font-size: fs(big);
+    @include mq($bp-xsmall) {
+        font-size: fs(x-big);
+    }
+}
+.section__contact {
+    width: 100%;
+    text-align: left;
+}
+.section__contact.section__btnback {
+    padding: 0 sizeComp(x-normal) 0 0;
+    width: 100%;
+    @include mq($bp-xsmall) {
+        padding: sizeComp(big) sizeComp(x-normal) 0 0;
+    }
+}
+.contact__form {
+    background-color: $gray;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - sizeComp(small) * 2);
+    padding: sizeComp(small);
+    & .input-small {
+        @include size-components(sizeComp(xxx-small), x-small, small, calc(100% - sizeComp(xxx-small) * 2));
+        & .input {
+            @include size-components(sizeComp(x-small) sizeComp(medium), x-small, small, 100%);
+            @include mq($bp-xsmall) {
+                @include size-components(sizeComp(x-small) sizeComp(medium), x-small, medium, 100%);
+            }
+            @include mq($bp-large) {
+                @include size-components(sizeComp(small) sizeComp(x-normal), small, normal, 100%);
+            }
+        }
+        @include mq($bp-xsmall) {
+            @include size-components(sizeComp(xx-small), x-small, medium, 100%);
+        }
+        @include mq($bp-large) {
+            @include size-components(sizeComp(xx-small), small, normal, 100%);
+        }
+    }
+    @include mq($bp-xsmall) {
+        width: calc(100% - sizeComp(big) * 2);
+        padding: sizeComp(big);
+    }
+}
+.input-small .input.input--contact__message {
+    width: calc(100% - 0.875rem * 2);
+    max-height: 55px;
+    @include mq($bp-small) {
+        max-height: 100px;
+    }
+    @include mq($bp-large) {
+        max-height: 66px;
+        width: calc(100% - 1.125rem * 2);
+    }
+    
+}
+.section__contact .ms-small {
+    @include size-components(sizeComp(xx-small), none, small);
+    @include mq($bp-xsmall) {
+        @include size-components(sizeComp(medium) sizeComp(big), none, medium);
+    }
+    @include mq($bp-large) {
+        @include size-components(sizeComp(medium) sizeComp(x-big), none, normal);
+    }
+}

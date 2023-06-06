@@ -1,7 +1,7 @@
 import './Card.scss';
 
 export default function Card(props) {
-    return <div className={props.type ? `card ${props.type}` : "card"}>
+    return <div className={`${props.moreclass ? props.moreclass : ''} ${props.type ? props.type : ''}`}>
         {props.children}
     </div>
 }

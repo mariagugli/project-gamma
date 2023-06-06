@@ -15,16 +15,7 @@ import Topbar from './components/topbar/Topbar'
 
 function App() {
 
-  let location = useLocation();
-
-  const navigate = useNavigate();
-    function GoToBlockpage() {
-        
-        setTimeout(() => {
-            
-            navigate('/blockpage', { replace: true });
-        }, 0);
-    }
+  const location = useLocation();
 
   return (
     <>
