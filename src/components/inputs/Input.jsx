@@ -18,7 +18,9 @@ export default function Input (props) {
                     <input 
                         className={props.inputclass !== undefined ? `input ${props.inputclass}` : "input"}
                         type={props.inputtype !== undefined ? props.inputtype : "text"}
+                        name={props.inputName ? props.inputName : ''}
                         placeholder={props.placeholder !== undefined ? props.placeholder : ''}
+                        required
                     >
                     </input>
                 </>

@@ -11,6 +11,9 @@
     width: 100%;
     text-align: left;
 }
+.section__messages {
+    position: relative;
+}
 .section__contact.section__btnback {
     padding: 0 sizeComp(x-normal) 0 0;
     width: 100%;
@@ -22,6 +25,7 @@
     background-color: $gray;
     position: absolute;
     bottom: 0;
+    left: 0;
     width: calc(100% - sizeComp(small) * 2);
     padding: sizeComp(small);
     & .input-small {
@@ -36,15 +40,27 @@
             }
         }
         @include mq($bp-xsmall) {
-            @include size-components(sizeComp(xx-small), x-small, medium, 100%);
+            @include size-components(sizeComp(xx-small), x-small, medium, calc(100% - sizeComp(xx-small) * 2));
         }
         @include mq($bp-large) {
-            @include size-components(sizeComp(xx-small), small, normal, 100%);
+            @include size-components(sizeComp(xx-small), small, normal, calc(100% - sizeComp(xx-small) * 2));
         }
     }
     @include mq($bp-xsmall) {
         width: calc(100% - sizeComp(big) * 2);
         padding: sizeComp(big);
+    }
+    @include mq() {
+        width: calc(100% - sizeComp(xx-big) * 2);
+        padding: sizeComp(big) sizeComp(xx-big);
+    }
+    @include mq($bp-large) {
+        width: calc(100% - 3rem * 2);
+        padding: sizeComp(big) 3rem;
+    }
+    @include mq($bp-extralarge) {
+        width: calc(100% - 4rem * 2);
+        padding: sizeComp(x-normal) 4rem;
     }
 }
 .input-small .input.input--contact__message {
@@ -57,7 +73,23 @@
         max-height: 66px;
         width: calc(100% - 1.125rem * 2);
     }
-    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input[type="submit"] {
+    background: none;
+    border: none;
+    font-family: inherit;
+    color: $white;
+}
+.btn-primary.btn-submitform {
+    margin-top: sizeComp(x-small);
+    &:hover > input[type="submit"] {
+        color: $black;
+    }
 }
 .section__contact .ms-small {
     @include size-components(sizeComp(xx-small), none, small);
@@ -66,5 +98,39 @@
     }
     @include mq($bp-large) {
         @include size-components(sizeComp(medium) sizeComp(x-big), none, normal);
+    }
+}
+
+.ms--1 {
+    opacity: 0;
+    animation: 1s smooth-appear--ms1 0.5s ease forwards;
+}
+.ms--2 {
+    opacity: 0;
+    animation: 1s smooth-appear--ms2 1.5s ease forwards;
+}
+.ms--3 {
+    opacity: 0;
+    animation: 1s smooth-appear--ms3 2.5s ease forwards;
+}
+
+@keyframes smooth-appear--ms1 {
+    to{
+      top: 85px;
+      opacity:1;
+    }
+}
+
+@keyframes smooth-appear--ms2 {
+    to{
+      top: 155px;
+      opacity:1;
+    }
+}
+
+@keyframes smooth-appear--ms3 {
+    to{
+      top: 225px;
+      opacity:1;
     }
 }

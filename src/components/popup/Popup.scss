@@ -1,0 +1,31 @@
+@import '../../scss/global.scss';
+
+.popup {
+    background-color: $gray__dark;
+    border-radius: 22px;
+    padding: sizeComp(x-big);
+    margin: 0 sizeComp(big);
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: sizeComp(x-small);
+    &::before {
+        content: '☝️'
+    }
+}
+.popup-correct {
+    background-color: $alert__green__light;
+    &::before {
+        content: '💚'
+    }
+}
+.popup-error {
+    background-color: $alert__red__light;
+    &::before {
+        content: '❤️‍🩹'
+    }
+}
+.open--popup {
+    display: flex;
+}
