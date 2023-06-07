@@ -2,7 +2,6 @@
 
 .ms-primary, .ms-secondary {
     border-radius: 22px;
-    color: $white;
     margin-bottom: sizeComp(xx-small);
     @include mq($bp-xsmall) {
         margin-bottom: sizeComp(normal);
@@ -10,10 +9,12 @@
 }
 
 .ms-primary {
-    background-color: $orange;
+    background-color: $peach__dark;
+    color: $black;
 }
 .ms-secondary {
     background-color: $olive;
+    color: $white;
 }
 
 .ms-small {

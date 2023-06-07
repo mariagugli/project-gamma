@@ -107,11 +107,11 @@ input[type="submit"] {
 }
 .ms--2 {
     opacity: 0;
-    animation: 1s smooth-appear--ms2 1.5s ease forwards;
+    animation: 1s smooth-appear--ms2 2s ease forwards;
 }
 .ms--3 {
     opacity: 0;
-    animation: 1s smooth-appear--ms3 2.5s ease forwards;
+    animation: 1s smooth-appear--ms3 3.5s ease forwards;
 }
 
 @keyframes smooth-appear--ms1 {

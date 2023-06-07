@@ -118,15 +118,15 @@ export default function Home() {
                     </Btn>
                 </Card>
                 <Card type="card-socials" moreclass={showSocials}>
-                    <a className="link__socials" href="#">
+                    <a className="link__socials" href="https://codepen.io/mariagugli" target="_blank">
                         <IconCodepen fill="fill-gray__darker" />
                         Codepen
                     </a>
-                    <a className="link__socials" href="#">
+                    <a className="link__socials" href="https://github.com/mariagugli" target="_blank">
                         <IconGithub fill="fill-gray__darker" />
                         Github
                     </a>
-                    <a className="link__socials" href="#">
+                    <a className="link__socials" href="#" target="_blank">
                         <IconLinkedIn fill="fill-gray__darker" />
                         LinkedIn
                     </a>
