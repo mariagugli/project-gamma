@@ -1,0 +1,22 @@
+@import '../../scss/global.scss';
+
+.section__tags--proyectos {
+    display: flex;
+    gap: sizeComp(xx-small);
+    flex-wrap: wrap;
+}
+.img__proyectos {
+    width: 50%;
+}
+.link__proyectos {
+    text-decoration: none;
+    color: $gray__darker;
+}
+.btn__proyects {
+    @include mq() {
+        @include size-components(sizeComp('small') sizeComp('x-big'), x-small, x-normal);
+    }
+    @include mq($bp-extralarge) {
+        @include size-components(sizeComp('small') sizeComp('xx-big'), x-small, big);
+    }
+}

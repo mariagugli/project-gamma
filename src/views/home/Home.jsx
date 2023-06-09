@@ -110,11 +110,8 @@ export default function Home() {
                     <Btn isLink={true} type="btn--home" to="/proyectos/genkoa">
                         <IconDoc type="docs__home" size="icondoc-default">Genkoa</IconDoc>
                     </Btn>
-                    <Btn isLink={true} type="btn--home" to="/proyectos/">
-                        <IconDoc type="docs__home" size="icondoc-default">Lorem</IconDoc>
-                    </Btn>
-                    <Btn isLink={true} type="btn--home" to="/proyectos/">
-                        <IconDoc type="docs__home" size="icondoc-default">Lorem</IconDoc>
+                    <Btn isLink={true} type="btn--home" to="/proyectos/portfolio">
+                        <IconDoc type="docs__home" size="icondoc-default">Porfolio</IconDoc>
                     </Btn>
                 </Card>
                 <Card type="card-socials" moreclass={showSocials}>

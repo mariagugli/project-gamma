@@ -12,6 +12,8 @@ import IconArrowRight from './components/icons/IconArrowRight'
 import Btn from './components/buttons/Btn'
 import Blockpage from './views/blockpage/Blockpage'
 import Topbar from './components/topbar/Topbar'
+import Gallery from './views/gallery/Gallery'
+import Projects from './views/projects/Projects'
 
 function App() {
 
@@ -39,6 +41,8 @@ function App() {
             <Route path="/blockpage" element={<Blockpage />} />
             <Route path="/sobremi" element={<About />} />
             <Route path="/sobremi/:imgId" element={<ImgAbout />} />
+            <Route path="/proyectos/:projectId" element={<Projects />} />
+            <Route path="/randomgallery" element={<Gallery />} />
           </Routes>
         </main>
       </div>
