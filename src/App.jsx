@@ -14,6 +14,7 @@ import Blockpage from './views/blockpage/Blockpage'
 import Topbar from './components/topbar/Topbar'
 import Gallery from './views/gallery/Gallery'
 import Projects from './views/projects/Projects'
+import GraphicDesign from './views/graphicdesign/GraphicDesign'
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
             <Route path="/styleguide" element={<Styleguide />} />
             <Route path="/blockpage" element={<Blockpage />} />
             <Route path="/sobremi" element={<About />} />
+            <Route path="/graphicdesign" element={<GraphicDesign />} />
             <Route path="/sobremi/:imgId" element={<ImgAbout />} />
             <Route path="/proyectos/:projectId" element={<Projects />} />
             <Route path="/randomgallery" element={<Gallery />} />

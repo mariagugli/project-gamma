@@ -22,14 +22,14 @@ export default function Projects() {
         </section>
         <h1>{listadoSeleccionado.title}</h1>
         
-        <section className="section__tags--proyectos">
-            {listadoSeleccionado.tags.map(tag => <Tag type={tag} size="tag-small" />)}
+        <section className="section__tags--projects">
+            {listadoSeleccionado.tags.map(tag => <Tag type={tag} key={tag} size="tag-small" />)}
         </section> 
-        <img className="img__proyectos" src={listadoSeleccionado.image} alt={listadoSeleccionado.title} />
-        <p>{listadoSeleccionado.description}</p>
+        <img className="img__projects" src={listadoSeleccionado.image} alt={listadoSeleccionado.title} />
+        <p className="description__projects">{listadoSeleccionado.description}</p>
         {listadoSeleccionado.id !== "portfolio" ?
-            <a className="link__proyectos" href={listadoSeleccionado.link}>
-                <Btn type="btn-text__dark btn__proyects" size="small">
+            <a className="link__projects" href={listadoSeleccionado.link}>
+                <Btn type="btn-text__dark btn__projects" size="small">
                     <IconBtnText bg="icon-dark-bg" br="icon-light-br">
                         <IconArrowRight size="icon-xx-small" fill="fill-peach__lighter"/>
                     </IconBtnText>
@@ -37,15 +37,12 @@ export default function Projects() {
                 </Btn>
             </a>
         : 
-        <div>
-            <Btn isLink={true} to="/blockpage" type="btn-text__dark btn__proyects" size="small">
+            <Btn isLink={true} to="/blockpage" type="btn btn-text__dark link__projects btn__projects" size="small">
                 <IconBtnText bg="icon-dark-bg" br="icon-light-br">
                     <IconArrowRight size="icon-xx-small" fill="fill-peach__lighter"/>
                 </IconBtnText>
                 Volver a la pantalla de inicio
-            </Btn>
-        </div>
-            
+            </Btn>     
         }
         
     </>

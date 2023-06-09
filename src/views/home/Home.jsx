@@ -76,7 +76,7 @@ export default function Home() {
                         </Link>
                     </div>
                     <div className="flowergroup-line">
-                        <Link to="/diseñografico">
+                        <Link to="/graphicdesign">
                             <IconFlower type="flower-home" size="flower-default" fill="fill-yellow">
                                 <p>Diseño Gráfico</p>
                             </IconFlower>
