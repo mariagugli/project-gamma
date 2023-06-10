@@ -1,1 +1,44 @@
 @import '../../scss/global.scss';
+
+.weather__app {
+    background-color: $gray__darker;
+    border-radius: 22px;
+    padding: 24px;
+    color: $white;
+    max-width: 511px;
+    & .searcher__bar input {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: $white;
+    }
+}
+.weather__info {
+    display: flex;
+    width: calc(100% - 44px);
+    justify-content: space-between;
+    padding: 0 22px;
+}
+.weather__humidity, .weather__wind {
+    padding-left: sizeComp(xx-small);
+    margin: 0;
+    font-size: fs(small);
+}
+.weather__description {
+    margin: 0
+}
+.weather__extratext--brief {
+    display: flex;
+    align-items: center;
+}
+.weather__temp {
+    font-size: fs(x-big);
+    padding-left: sizeComp(xx-small);
+}
+.weather__info--icon {
+    width: calc(50% - 60px);
+    padding: 30px 0 30px 60px;
+    display: flex;
+}
+.weather__icon {
+    height: auto;
+    object-fit: contain;
+}

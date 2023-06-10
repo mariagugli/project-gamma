@@ -12,6 +12,9 @@
 .searcher__bar {
     @include size-components(sizeComp(xx-small), x-small, medium, 100%);
     & > .input {
+        &:focus, &:focus-visible {
+            outline: $orange__light auto 1px;
+        }
         @include size-components(sizeComp(x-small) sizeComp(medium), x-small, medium, calc(100% - sizeComp(medium) * 2));
     }
     @include mq {

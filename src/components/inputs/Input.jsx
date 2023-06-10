@@ -19,6 +19,9 @@ export default function Input (props) {
                         className={props.inputclass !== undefined ? `input ${props.inputclass}` : "input"}
                         type={props.inputtype !== undefined ? props.inputtype : "text"}
                         name={props.inputName ? props.inputName : ''}
+                        onChange={props.onChange}
+                        onKeyPress={props.onKeyPress}
+                        value={props.inputvalue}
                         placeholder={props.placeholder !== undefined ? props.placeholder : ''}
                         required
                     >

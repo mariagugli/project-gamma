@@ -344,12 +344,9 @@ export default function Styleguide() {
                 <Card />
             </section>
 
-
-            <Weather />
-    
-            
-
-            
+            <section className='section__styleguide'>
+                <Weather />
+            </section>
             
         </main>
         

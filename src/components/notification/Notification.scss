@@ -6,14 +6,14 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    @include size-components(sizeComp(medium), medium, normal, 100%);
+    @include size-components(sizeComp(medium), medium, normal, auto);
     @include mq() {
         border-radius: 16px;
-        @include size-components(sizeComp(x-normal), x-normal, normal, 100%);
+        @include size-components(sizeComp(x-normal), x-normal, normal, auto);
     }
     @include mq($bp-large) {
         border-radius: 16px;
-        @include size-components(sizeComp(x-big), x-big, normal, 100%);
+        @include size-components(sizeComp(x-big), x-big, normal, auto);
     }
     & > .sidebar__btnbox > [sizebtn="small"] {
         @include mq() {
