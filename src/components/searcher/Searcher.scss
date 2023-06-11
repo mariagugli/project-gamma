@@ -24,3 +24,10 @@
         }
     }
 }
+
+.searcher__bar .icon-x-small {
+    @include icon-size(xxxx-small, sizeIcon(xxxx-small));
+    @include mq() {
+        @include icon-size(xxx-small, sizeIcon(xxx-small));
+    }
+}

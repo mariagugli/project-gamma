@@ -17,6 +17,25 @@
     justify-content: space-between;
     padding: 0 22px;
 }
+.weather__info--text {
+    width: 100%;
+}
+.weather__info--extratext {
+    text-align: left;
+}
+.weather__extratext--brief {
+    display: flex;
+    align-items: center;
+}
+.weather__city, .weather__temp {
+    font-size: fs(big);
+    @include mq() {
+        font-size: fs(x-big);
+    }
+}
+.weather__temp {
+    padding-left: sizeComp(xx-small);
+}
 .weather__humidity, .weather__wind {
     padding-left: sizeComp(xx-small);
     margin: 0;
@@ -24,14 +43,6 @@
 }
 .weather__description {
     margin: 0
-}
-.weather__extratext--brief {
-    display: flex;
-    align-items: center;
-}
-.weather__temp {
-    font-size: fs(x-big);
-    padding-left: sizeComp(xx-small);
 }
 .weather__info--icon {
     width: calc(50% - 60px);

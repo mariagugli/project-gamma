@@ -10,7 +10,7 @@ export default function Btn(props) {
                 {props.children}
             </Link>
         :
-            <button onClick={props.onClick} className={`btn ${props.type} ${props.size ? `btn-${props.size}` : "btn-default" }`} type="button" disabled={props.status === 'disable' ? true : false}>
+            <button value={props.value} onClick={props.onClick} className={`btn ${props.type} ${props.size ? `btn-${props.size}` : "btn-default" }`} type="button" disabled={props.status === 'disable' ? true : false}>
                 {props.icon ? props.icon : ''}
                 {props.text ? props.text : ''}
                 {props.children}

@@ -16,16 +16,16 @@ export default function Home() {
 
     const [ showProjects, setShowProjects] = useState("card");
     const [ showSocials, setShowSocials] = useState("card");
+    
 
     const handleProjects = () => {
         setShowProjects("opened-card");
-        
     };
     const handleSocials = () => {
         setShowSocials("opened-card");
         
     };
-
+    
     const useClickOutside = (handler) => {
         const closeCard = useRef();
 

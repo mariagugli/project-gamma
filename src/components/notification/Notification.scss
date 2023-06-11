@@ -11,18 +11,6 @@
         border-radius: 16px;
         @include size-components(sizeComp(x-normal), x-normal, normal, auto);
     }
-    @include mq($bp-large) {
-        border-radius: 16px;
-        @include size-components(sizeComp(x-big), x-big, normal, auto);
-    }
-    & > .sidebar__btnbox > [sizebtn="small"] {
-        @include mq() {
-            @include size-components(sizeComp('small') sizeComp('x-big'), x-small, x-normal);
-        } 
-        @include mq($bp-large) {
-            @include size-components(sizeComp('small') sizeComp('xx-big'), x-small, big);
-        } 
-    }
 }
 
 .notification__btnbox {
@@ -38,17 +26,12 @@
     @include mq() {
         font-size: fs(x-big);
     }
-    @include mq($bp-large) {
-        font-size: fs(xx-big);
-    }
 }
 
 .notification__text {
     margin: 0;
+    text-align: left;
     @include mq() {
         font-size: fs(big);
-    }
-    @include mq($bp-large) {
-        font-size: fs(x-big);
     }
 }

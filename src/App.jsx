@@ -10,21 +10,52 @@ import ImgAbout from './views/about/ImgAbout'
 import IconBtnText from './components/icons/IconBtnText'
 import IconArrowRight from './components/icons/IconArrowRight'
 import Btn from './components/buttons/Btn'
+import Card from './components/cards/Card'
 import Blockpage from './views/blockpage/Blockpage'
 import Topbar from './components/topbar/Topbar'
 import Gallery from './views/gallery/Gallery'
 import Projects from './views/projects/Projects'
 import GraphicDesign from './views/graphicdesign/GraphicDesign'
+import Notification from './components/notification/Notification'
+import Weather from './components/weather/Weather'
 
 function App() {
 
   const location = useLocation();
 
+  const [ showAsidePopup, setShowAsidePopup] = useState("card");
+  const [ hideIconPlus, sethideIconPlus] = useState("");
+  const [ hideIconMinus, sethideIconMinus] = useState("hide");
+
+  const handleAsidePopup = () => {
+    setShowAsidePopup("opened-card");
+    sethideIconPlus("hide");
+    sethideIconMinus("");
+  };
+  const handleHideAsidePopup = () => {
+    setShowAsidePopup("card");
+    sethideIconPlus("");
+    sethideIconMinus("hide");
+  };
+
   return (
     <>
       <div className="screen color-bg-blue">
         <header className={location.pathname === "/blockpage" ? 'hide' : ''}>
-          <Topbar />
+          <Topbar 
+            handleClickPlus={handleAsidePopup} 
+            handleClickMinus={handleHideAsidePopup} 
+            btnPlustopbar={hideIconPlus} 
+            btnMinustopbar={hideIconMinus} />
+          <Card type="card-aside" moreclass={showAsidePopup}>
+              <Notification 
+                name='Gugli' 
+                text='Estoy disponible para trabajar.' 
+                btntext='Contáctame'
+                to="/contact"
+              />
+              <Weather />
+          </Card>
         </header>
         <main className={
           location.pathname === "/blockpage" ? "main__blockpage"

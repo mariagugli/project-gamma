@@ -9,14 +9,27 @@
             @include icon-size(x-medium, auto);
         }
     }
-    & > .btn-small {
+    
+}
+
+.btn-topbar {
+    @include mq() {
+        @include size-components(sizeComp('small') sizeComp('x-big'), x-small, x-normal);
+    }
+    & > .icon-xx-small {
+        @include icon-size(xxxx-small, sizeIcon(xxxx-small));
         @include mq() {
-            @include size-components(sizeComp('small') sizeComp('x-big'), x-small, x-normal);
+            @include icon-size(xxx-small, sizeIcon(xxx-small));
         }
-        & > .icon-xx-small {
-            @include mq() {
-                @include icon-size(xxx-small, auto);
-            }
-        }
+    }
+}
+.btn__minus-topbar {
+    background: none;
+    border: 1px solid transparent;
+    z-index: 2;
+    &:hover, &:focus, &:focus-visible {
+        outline: none;
+        background: none;
+        border: 1px solid transparent;
     }
 }

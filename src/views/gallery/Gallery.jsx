@@ -1,6 +1,6 @@
 import { IMGSGALLERY, buttonsFilterGallery } from '../../../public/images-gallery';
 import { getImages, filterGallery } from '../../../public/services';
-import { useEffect, useState } from "react";
+import { useRef, useState } from "react";
 import Btn from '../../components/buttons/Btn';
 import IconArrowLeft from '../../components/icons/IconArrowLeft';
 import './Gallery.scss';
@@ -8,31 +8,48 @@ import './Gallery.scss';
 export default function Gallery() {
     
     const listado = IMGSGALLERY;
-    const [filteredGallery, setFilteredGallery] = useState(null);
-    
-    useEffect(() => {
-        setFilteredGallery(listado);
-    }, []);
+    const [filteredGallery, setFilteredGallery] = useState(listado);
+
+    const tagRoma = listado.filter(tag => {
+        return tag.tag === "roma"
+    });
+    const tagMateoM = listado.filter(tag => {
+        return tag.tag === "mateo-morral"
+    });
+    const tagMeseta = listado.filter(tag => {
+        return tag.tag === "meseta"
+    });
+    const tagPolaroid = listado.filter(tag => {
+        return tag.tag === "polaroids"
+    });
+    const tagConcierto = listado.filter(tag => {
+        return tag.tag === "conciertos"
+    });
+    const tagVerano = listado.filter(tag => {
+        return tag.tag === "verano"
+    });
+    const tagClaudia = listado.filter(tag => {
+        return tag.tag === "claudia"
+    });
     
     function handleImagesGallery(e) {
         const typeImgGallery = e.target.value;
-        typeImgGallery !== "all"
-        ? setFilteredGallery(filterGallery(typeImgGallery))
-        : setFilteredGallery(getImages())
+        if (typeImgGallery === "roma") {
+            setFilteredGallery(tagRoma)
+        } else if (typeImgGallery === "mateomorral") {
+            setFilteredGallery(tagMateoM)
+        } else if(typeImgGallery === "conciertos") {
+            setFilteredGallery(tagConcierto)
+        } else if(typeImgGallery === "meseta") {
+            setFilteredGallery(tagMeseta)
+        } else if (typeImgGallery === "polaroids") {
+            setFilteredGallery(tagPolaroid)
+        } else if (typeImgGallery === "verano") {
+            setFilteredGallery(tagVerano)
+        } else if (typeImgGallery === "claudia") {
+            setFilteredGallery(tagClaudia)
+        } else return setFilteredGallery(listado)
     }
-
-    const columna1 = listado.filter(imgs => {
-        return imgs.table === "table-1"
-    });
-    const columna2 = listado.filter(imgs => {
-        return imgs.table === "table-2"
-    });
-    const columna3 = listado.filter(imgs => {
-        return imgs.table === "table-3"
-    });
-    const columna4 = listado.filter(imgs => {
-        return imgs.table === "table-4"
-    });
 
     return <>
         <section className="section__btnback">
@@ -47,7 +64,7 @@ export default function Gallery() {
             {buttonsFilterGallery &&
             buttonsFilterGallery.map(type => (
             <>
-                <Btn key={type.name} value={type.value} onClick={handleImagesGallery} type="btn__menugallery">
+                <Btn key={type.id} value={type.value} onClick={handleImagesGallery} type="btn__menugallery">
                 {type.name}
                 </Btn>
             </>
@@ -55,30 +72,14 @@ export default function Gallery() {
         </section>
         <section className="section__gallery section__imgsgallery">
             <article className='article__columnsgallery'>
-                <div className='table-1'>
-                    {columna1.map(img =>
-                        <img className="img__gallery" value={img.tag} key={img.id} src={img.image} alt={img.title} />
-                    )}
-                </div>
-                <div className='table-2'>
-                    {columna2.map(img =>
-                        <img className="img__gallery" value={img.tag} key={img.id} src={img.image} alt={img.title} />
-                    )}
-                </div>
+                
+                {filteredGallery &&
+                filteredGallery.map(type =>
+                    <img className={`img__gallery img-${type.size}`} value={type.tag} key={type.id} src={type.image} alt={type.title} />
+                )}
+                
             </article>
-            <article className='article__columnsgallery'>
-                <div className='table-3'>
-                    {columna3.map(img =>
-                        <img className="img__gallery" value={img.tag} key={img.id} src={img.image} alt={img.title} />
-                    )}
-                </div>
-                <div className='table-4'>
-                    {columna4.map(img =>
-                        <img className="img__gallery" value={img.tag} key={img.id} src={img.image} alt={img.title} />
-                    )}
-                </div>
-            </article>
+            
         </section>
-
     </>
 }
