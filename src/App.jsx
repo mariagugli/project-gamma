@@ -40,7 +40,9 @@ function App() {
 
   return (
     <>
-      <div className="screen color-bg-blue">
+      <div className={location.pathname === "/" ? "screen color-bg-blue"
+      : location.pathname === "/blockpage" ? "screen color-bg-blue"
+      : "screen color-bg-white"}>
         <header className={location.pathname === "/blockpage" ? 'hide' : ''}>
           <Topbar 
             handleClickPlus={handleAsidePopup} 

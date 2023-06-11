@@ -1,7 +1,7 @@
 export const DESIGNPROJECTS = [
     {
         "id"            : "raices",
-        "title"         : "raices",
+        "title"         : "Raices",
         "description"   : "RAICES",
         "image"         : "/raices.webp"
     },
@@ -22,5 +22,24 @@ export const DESIGNPROJECTS = [
         "title"         : "Genkoa",
         "description"   : "Cartel y logo para el proyecto Genkoa.",
         "image"         : "/nolloresporlasflores.webp"
+    }
+]
+
+export const buttonsDesignProjects = [
+    {
+        "name"  : "Raices",
+        "value" : "raices"
+    },
+    {
+        "name"  : "Sopa de letras",
+        "value" : "sopadeletras"
+    },
+    {
+        "name"  : "No llores por las flores",
+        "value" : "nolloresporlasflores"
+    },
+    {
+        "name"  : "Genkoa",
+        "value" : "genkoa"
     }
 ]

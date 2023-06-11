@@ -1,6 +1,5 @@
 import { IMGSGALLERY, buttonsFilterGallery } from '../../../public/images-gallery';
-import { getImages, filterGallery } from '../../../public/services';
-import { useRef, useState } from "react";
+import { useState } from "react";
 import Btn from '../../components/buttons/Btn';
 import IconArrowLeft from '../../components/icons/IconArrowLeft';
 import './Gallery.scss';
@@ -63,11 +62,9 @@ export default function Gallery() {
         <section className="section__gallery section__menugallery">
             {buttonsFilterGallery &&
             buttonsFilterGallery.map(type => (
-            <>
                 <Btn key={type.id} value={type.value} onClick={handleImagesGallery} type="btn__menugallery">
                 {type.name}
                 </Btn>
-            </>
             ))}
         </section>
         <section className="section__gallery section__imgsgallery">
