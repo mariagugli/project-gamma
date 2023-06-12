@@ -64,14 +64,14 @@ export default function Home() {
             <section className="section__home section__groupflowers">
                 <article className="article__home btn__groups__home">
                     <div className="flowergroup-line">
-                        <Link to="/">
+                        <a href="public/cv-MariaGuglielmone.pdf" target="_blank">
                             <IconFlower type="flower-home" size="flower-default" fill="fill-purple">
-                                <p>Lorem</p>
+                                <p>CV</p>
                             </IconFlower>
-                        </Link>
+                        </a>
                         <Link to="/" className="flower-right">
                             <IconFlower type="flower-home" size="flower-default" fill="fill-peach">
-                                <p>Lorem</p>
+                                <p>Calendario</p>
                             </IconFlower>
                         </Link>
                     </div>
