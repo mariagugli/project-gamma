@@ -1,5 +1,4 @@
 import './Style.scss'
-import Nav from "./Nav"
 import Btn from '../components/buttons/Btn'
 import IconArrowRight from '../components/icons/IconArrowRight'
 import IconBtnText from '../components/icons/IconBtnText'
@@ -252,13 +251,13 @@ export default function Styleguide() {
                 <article className='articles__styleguide'>
                     <h3 className='subtitle__styleguide'>Flowers</h3>
                     <div className='pattern__group-styleguide'>
-                        <IconFlower size="flower-big" fill="fill-yellow">
+                        <IconFlower size="flower-small" fill="fill-yellow">
                             Proyecto
                         </IconFlower>
-                        <IconFlowerLarge size="flowerlarge-big" fill="fill-yellow">
+                        <IconFlowerLarge size="flowerlarge-small" fill="fill-yellow">
                             Proyecto
                         </IconFlowerLarge>
-                        <IconFlowerXlarge size="flowerxlarge-big" fill="fill-yellow">
+                        <IconFlowerXlarge size="flowerxlarge-small" fill="fill-yellow">
                             Proyecto
                         </IconFlowerXlarge>
                     </div>
@@ -277,13 +276,12 @@ export default function Styleguide() {
                     <h3>Inputs forms</h3>
                     <Input isInputForm={true} type='input-row' label='Nombre' placeholder='Escribe tu nombre' inputtype='text'/>
                     <Input isInputForm={true} type='input-column' label='Email' placeholder='Escribe tu email' inputtype='email'/>
-                    <Input isInputForm={true} label='Nombre' placeholder='Escribe tu nombre' inputtype='checkbox'/>
-                    <Input isInputForm={true} label='Nombre' placeholder='Escribe tu nombre' inputtype='radio'/>
+                    <Input isInputForm={true} type='input-row' label='Nombre' placeholder='Escribe tu nombre' inputtype='checkbox'/>
+                    <Input isInputForm={true} type='input-row' label='Nombre' placeholder='Escribe tu nombre' inputtype='radio'/>
                 </article>
                 <article className='articles__styleguide'>
                     <h3>Toggle Switch</h3>
                     <Input isToggle={true} />
-                    <Input isToggle={true} switch='switch-big' slider='slider-big'/>
                 </article>
             </section>
             <div className='group__sections-styleguide'>
@@ -299,24 +297,24 @@ export default function Styleguide() {
                     <h2 className='title__styleguide'>Mensajes</h2>
                     <div className='pattern__group-styleguide'>
                         <article className='articles__styleguide'>
-                            <Message type='ms-primary' size='ms-small'>
+                            <Message type='primary' size='small'>
                                 Hola! Soy un mensaje principal pequeño.
                             </Message>
-                            <Message type='ms-primary' size='ms-default'>
+                            <Message type='primary' size='default'>
                                 Hola! Soy un mensaje principal default.
                             </Message>
-                            <Message type='ms-primary' size='ms-big'>
+                            <Message type='primary' size='big'>
                                 Hola! Soy un mensaje principal grande.
                             </Message>
                         </article>
                         <article className='articles__styleguide'>
-                        <Message type='ms-secondary' size='ms-small'>
+                        <Message type='secondary' size='small'>
                                 Hola! Soy un mensaje secundario pequeño.
                             </Message>
-                            <Message type='ms-secondary' size='ms-default'>
+                            <Message type='secondary' size='default'>
                                 Hola! Soy un mensaje secundario default.
                             </Message>
-                            <Message type='ms-secondary' size='ms-big'>
+                            <Message type='secondary' size='big'>
                                 Hola! Soy un mensaje secundario grande.
                             </Message>
                         </article>
@@ -325,8 +323,7 @@ export default function Styleguide() {
             </div>
             <section className='section__styleguide'>
                 <h2 className='title__styleguide'>Topbar</h2>
-                <Topbar />
-                <Topbar />
+                <Topbar btnMinustopbar="hide"/>
             </section>
             <section className='section__styleguide'>
                 <h2 className='title__styleguide'>Mensaje del Sidebar</h2>
@@ -336,18 +333,12 @@ export default function Styleguide() {
                     btntext='Contáctame'
                 />
             </section>
-            <section className='section__styleguide'>
-                <Footer />
+            <section className='section__styleguide section__footer-styleguide'>
+                <Footer type="footer__styleguide"/>
             </section>
-
-            <section className='section__styleguide'>
-                <Card />
-            </section>
-
             <section className='section__styleguide'>
                 <Weather />
             </section>
-            
         </main>
         
     </>

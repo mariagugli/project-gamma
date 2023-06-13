@@ -3,7 +3,7 @@ export const PROJECTS = [
         "id"    : "aboutme",
         "title" : "AboutMe",
         "description" : "AboutMe fue mi primer proyecto como diseñadora y desarrolladora web. Es un 'one page' basado en información sobre mi donde puedes conocerme un poco más. ",
-        "image" : "/IMG_0201.webp",
+        "image" : "/aboutme-project.png",
         "link"  : "#",
         "tags"  : [ "javascript", "css", "uxui"]  
         

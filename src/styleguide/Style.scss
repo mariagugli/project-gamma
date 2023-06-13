@@ -9,7 +9,6 @@ body {
     flex-direction: column;
     gap: sizeComp('xx-big');
 }
-
 .group__sections-styleguide,
 .group__sections-styleguide--column {
     display: flex;
@@ -21,15 +20,12 @@ body {
         flex-wrap: nowrap;
     }
 }
-
 .group__sections-styleguide {
     @include mq($bp-large) {
         flex-direction: row;
     }
 
 }
-
-
 .section__styleguide {
     background-color: $gray__light;
     border: 1px solid $gray__dark;
@@ -54,7 +50,9 @@ body {
 .section__tags {
     width: fit-content;
 }
-
+.section__footer-styleguide {
+    position: relative;
+}
 .articles__styleguide {
     padding-left: sizeComp('big');
     display: flex;
@@ -128,6 +126,12 @@ body {
 .text__explaining {
     color: $gray__dark;
     text-decoration: underline dotted $gray__dark;
+}
+
+.footer__styleguide {
+    @include mq($bp-extralarge) {
+        position: static;
+    }
 }
 
 .width-100 {
