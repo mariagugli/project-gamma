@@ -40,6 +40,7 @@ export default function Blockpage() {
             <h1 className="title-web">Desarrolladora Web</h1>
         </section>
         <section className="section__blockpage">
+            <p className="info__input">Click para desbloquear</p>
             <Input isToggle={true} onChange={ChangeToHome}/>
         </section>
         
