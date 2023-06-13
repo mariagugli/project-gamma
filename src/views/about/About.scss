@@ -64,8 +64,12 @@
 .section__aboutpost {
     text-align: left;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     & > p {
         font-size: fs(medium);
+        width: 100%;
         @include mq($bp-medium) {
             font-size: fs(normal);
         }
@@ -75,14 +79,14 @@
         padding: 0 150px;
     }
     @include mq($bp-extralarge) {
-        width: calc(100% - 250px * 2);
-        padding: 0 250px;
+        width: calc(100% - 350px * 2);
+        padding: 0 350px;
     }
 }
 .img__aboutpost {
     width: 100%;
     height: auto;
-    max-height: 1000px;
+    max-height: 700px;
     object-fit: cover;
 }
 .carruselle {

@@ -14,8 +14,8 @@ export default function Blockpage() {
         const day = new Date().getDate();
         const month = monthname[new Date().getMonth()];
         const year = new Date().getFullYear();
-        const hours = new Date().getHours();
-        const min = new Date().getMinutes();
+        const hours = String(new Date().getHours()).padStart(2, "0");
+        const min = String(new Date().getMinutes()).padStart(2, "0");
 
         setCurrentDate( day + ' de ' + month + ' de ' + year );
         setCurrentTime( hours + ':' + min );
