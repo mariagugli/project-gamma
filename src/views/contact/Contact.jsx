@@ -55,7 +55,7 @@ export default function Contact() {
                 <Input isInputForm={true} type="input-row" size="input-small" inputtype="email" label="Correo" placeholder="Escribe aquí tu correo" inputName="user__email" />
                 <Input isInputForm={true} type="input-column input-column--contact" size="input-small" inputtype="textarea" inputclass="input--contact__message" label="Mensaje" placeholder="Cuéntame qué necesitas en esta casilla" inputName="user__message" />
                 <Btn type="btn-primary btn-submitform" size="small">
-                    <input type='submit' value="Send" />
+                    <input type='submit' value="Enviar" />
                 </Btn>
                 
             </form>
