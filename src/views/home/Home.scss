@@ -2,12 +2,15 @@
 
 .main__home {
     width: 100%;
-    height: calc(100% - 40px - sizeComp(x-normal) * 2);
-    padding: sizeComp(x-normal) 0;
+    height: calc(100% - 40px - sizeComp(x-normal) - 3.125rem);
+    padding: 3.125rem 0 sizeComp(x-normal);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    @include mq($bp-xsmall) {
+        padding: 3.125rem 0;
+    }
     @include mq($bp-small) {
         height: calc(100% - 40px);
         padding: 0;
@@ -34,7 +37,6 @@
         gap: sizeComp(small);
         padding: 0 4rem;
         width: calc(100% - 8rem);
-        
     }
     @include mq() {
         height: 80%;
@@ -103,7 +105,6 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 100%;
     @include mq($bp-xsmall) {
         gap: sizeComp(x-normal);
     }

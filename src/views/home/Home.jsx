@@ -71,7 +71,7 @@ export default function Home() {
                         </a>
                         <Link to="/" className="flower-right">
                             <IconFlower type="flower-home" size="flower-default" fill="fill-peach">
-                                <p>Calendario</p>
+                                <p>Agenda</p>
                             </IconFlower>
                         </Link>
                     </div>

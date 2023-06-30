@@ -3,13 +3,16 @@
 .topbar {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: calc(100% - 2rem - 50px);
+    position: fixed;
     & > .logo-x-small {
         @include mq() {
             @include icon-size(x-medium, auto);
         }
     }
-    
+    @include mq() {
+        width: calc(100% - 4rem - 50px);
+    }
 }
 
 .btn-topbar {
