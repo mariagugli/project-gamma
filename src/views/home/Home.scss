@@ -17,7 +17,7 @@
         justify-content: space-around;
     }
     @include mq() {
-        height: calc(100% - 50px);
+        height: 100%;
     }
     @include mq($bp-extralarge) {
         flex-direction: row;
