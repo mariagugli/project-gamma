@@ -129,7 +129,6 @@ export default function Home() {
                     </a>
                 </Card>
             </section>
-            
         </div>
 
         <Footer btnredes={handleSocials} />
