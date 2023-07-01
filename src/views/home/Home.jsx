@@ -64,7 +64,7 @@ export default function Home() {
             <section className="section__home section__groupflowers">
                 <article className="article__home btn__groups__home">
                     <div className="flowergroup-line">
-                        <a href="/cv-MariaGuglielmone.pdf" target="”_blank”">
+                        <a href="/MariaGuglielmoneCV.pdf" target="”_blank”">
                             <IconFlower type="flower-home" size="flower-default" fill="fill-purple">
                                 <p>CV</p>
                             </IconFlower>
