@@ -3,7 +3,7 @@
 .topbar {
     display: flex;
     justify-content: space-between;
-    width: calc(100% - 1rem - 50px);
+    width: calc(100% - 2rem - 24px);
     position: fixed;
     z-index: 3;
     & > .logo-x-small {
@@ -11,8 +11,8 @@
             @include icon-size(x-medium, auto);
         }
     }
-    @include mq() {
-        width: calc(100% - 4rem - 50px);
+    @include mq($bp-large) {
+        width: calc(100% - 4rem - 24px);
     }
 }
 

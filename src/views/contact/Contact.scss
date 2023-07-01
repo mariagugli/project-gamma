@@ -7,18 +7,21 @@
         font-size: fs(x-big);
     }
 }
-.section__contact {
-    width: 100%;
-    text-align: left;
-}
 .section__messages {
     position: relative;
 }
 .section__contact {
-    padding: 0 sizeComp(x-normal) 0 0;
-    width: 100%;
+    padding: sizeComp(huge) sizeComp(x-normal) 0 0;
+    text-align: left;
+    width: calc(100% - sizeComp(x-normal));
     @include mq($bp-xsmall) {
         padding: sizeComp(big) sizeComp(x-normal) 0 0;
+    }
+    @include mq() {
+        padding: 3.375rem sizeComp(x-normal) 0 0;
+    }
+    @include mq($bp-large) {
+        padding: 4.375rem sizeComp(x-normal) 0 0;
     }
 }
 .contact__form {

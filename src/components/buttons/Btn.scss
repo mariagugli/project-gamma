@@ -166,9 +166,18 @@ a {
 .section__btnback {
   padding: sizeComp(huge) sizeComp(x-normal) 0 0;
   position: fixed;
-  top: 40px;
+  top: 20px;
   z-index: 2;
   width: calc(100% - 3.125rem - 24px);
+  @include mq($bp-xsmall) {
+    top: 40px;
+  }
+  @include mq() {
+    top: 60px;
+  }
+  @include mq($bp-large) {
+    width: calc(100% - 5.125rem - 24px);
+  }
 }
 .btn__back {
   display: flex;
@@ -176,6 +185,6 @@ a {
   height: auto;
   padding: 0.75rem 0.75rem;
   @include mq ($bp-large) {
-      width: 40px;
+    width: 35px;
   }
 }
