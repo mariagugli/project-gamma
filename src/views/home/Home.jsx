@@ -64,7 +64,7 @@ export default function Home() {
             <section className="section__home section__groupflowers">
                 <article className="article__home btn__groups__home">
                     <div className="flowergroup-line">
-                        <a href="public/cv-MariaGuglielmone.pdf" target="_blank">
+                        <a href="/cv-MariaGuglielmone.pdf" target="”_blank”">
                             <IconFlower type="flower-home" size="flower-default" fill="fill-purple">
                                 <p>CV</p>
                             </IconFlower>
@@ -111,7 +111,7 @@ export default function Home() {
                         <IconDoc type="docs__home" size="icondoc-default">Genkoa</IconDoc>
                     </Btn>
                     <Btn isLink={true} type="btn--home" to="/proyectos/portfolio">
-                        <IconDoc type="docs__home" size="icondoc-default">Porfolio</IconDoc>
+                        <IconDoc type="docs__home" size="icondoc-default">Portfolio</IconDoc>
                     </Btn>
                 </Card>
                 <Card type="card-socials" moreclass={showSocials}>

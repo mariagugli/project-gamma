@@ -28,7 +28,7 @@ export default function Projects() {
         <img className="img__projects" src={listadoSeleccionado.image} alt={listadoSeleccionado.title} />
         <p className="description__projects">{listadoSeleccionado.description}</p>
         {listadoSeleccionado.id !== "portfolio" ?
-            <a className="link__projects" href={listadoSeleccionado.link}>
+            <a className="link__projects" href={listadoSeleccionado.link} target="_blank">
                 <Btn type="btn-text__dark btn__projects" size="small">
                     <IconBtnText bg="icon-dark-bg" br="icon-light-br">
                         <IconArrowRight size="icon-xx-small" fill="fill-peach__lighter"/>
