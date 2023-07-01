@@ -14,16 +14,21 @@
   cursor: pointer;
   transition: border-color 0.25s;
   transition: background-color 0.25s;
+  color: $black;
 }
 .btn:focus,
 .btn:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+a {
+  color: $black;
 }
 .linkbtn {
   background: none;
   text-decoration: none;
   cursor: pointer;
   padding: 0;
+  color: $black;
 }
 .btn-small {
   @include size-components(sizeComp('x-small') sizeComp('big'), x-small, medium);

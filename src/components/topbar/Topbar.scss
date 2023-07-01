@@ -3,7 +3,7 @@
 .topbar {
     display: flex;
     justify-content: space-between;
-    width: calc(100% - 2rem - 50px);
+    width: calc(100% - 1rem - 50px);
     position: fixed;
     z-index: 2;
     & > .logo-x-small {
