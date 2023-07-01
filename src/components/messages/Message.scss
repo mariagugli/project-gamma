@@ -3,7 +3,7 @@
 .ms-primary, .ms-secondary {
     border-radius: 22px;
     margin-bottom: sizeComp(xx-small);
-    @include mq($bp-xsmall) {
+    @include mq() {
         margin-bottom: sizeComp(normal);
     }
 }

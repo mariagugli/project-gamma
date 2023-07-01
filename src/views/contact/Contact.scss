@@ -92,8 +92,8 @@ input[type="submit"] {
     }
 }
 .section__contact .ms-small {
-    @include size-components(sizeComp(xx-small), none, small);
-    @include mq($bp-xsmall) {
+    @include size-components(sizeComp(xx-small) sizeComp(normal), none, small);
+    @include mq() {
         @include size-components(sizeComp(medium) sizeComp(big), none, medium);
     }
     @include mq($bp-large) {
