@@ -14,7 +14,7 @@
 .section__messages {
     position: relative;
 }
-.section__contact.section__btnback {
+.section__contact {
     padding: 0 sizeComp(x-normal) 0 0;
     width: 100%;
     @include mq($bp-xsmall) {

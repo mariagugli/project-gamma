@@ -42,7 +42,7 @@ export default function GraphicDesign() {
                 <IconArrowLeft fill="fill-gray__darker" />
             </Btn>
         </section>
-        <h1>Diseño Gráfico</h1>
+        <h1 className='margin-top-pagecontent'>Diseño Gráfico</h1>
         <div className="allsections__graphicdesign">
             <section className="section__graphicdesign">
                 <article className="menu__btn--gd">

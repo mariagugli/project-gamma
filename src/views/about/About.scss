@@ -8,16 +8,12 @@
     align-items: center;
     gap: sizeComp(x-normal);
 }
-.section__btnback {
-    padding: sizeComp(big) sizeComp(x-normal) 0 0;
-    width: 100%;
-}
 .section__title {
     background-color: $blue__dark;
     border-radius: 205px;
-    margin-bottom: sizeComp(huge);
-    width: 100%;
-    padding: sizeComp(normal) 0.75rem;
+    margin: 6rem 0;
+    width: calc(100% - sizeComp(small) * 2);
+    padding: sizeComp(normal) sizeComp(small);
 
     & > p {
         margin: 0;
@@ -67,6 +63,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 90px;
     & > p {
         font-size: fs(medium);
         width: 100%;
@@ -131,14 +128,5 @@
         &:hover {
             transform: scale(1.1);
         }
-    }
-}
-
-.btn__back {
-    display: flex;
-    width: 25px;
-    height: auto;
-    @include mq ($bp-large) {
-        width: 40px;
     }
 }

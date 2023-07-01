@@ -56,7 +56,7 @@ export default function Gallery() {
                 <IconArrowLeft fill="fill-gray__darker" />
             </Btn>
         </section>
-        <h1>Random Gallery</h1>
+        <h1 className='margin-top-pagecontent'>Random Gallery</h1>
         <h2 className='subtitle__gallery'>También soy fotógrafa</h2>
 
         <section className="section__gallery section__menugallery">

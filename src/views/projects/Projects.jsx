@@ -20,7 +20,7 @@ export default function Projects() {
                 <IconArrowLeft fill="fill-gray__darker" />
             </Btn>
         </section>
-        <h1>{listadoSeleccionado.title}</h1>
+        <h1 className="margin-top-pagecontent">{listadoSeleccionado.title}</h1>
         
         <section className="section__tags--projects">
             {listadoSeleccionado.tags.map(tag => <Tag type={tag} key={tag} size="tag-small" />)}

@@ -38,7 +38,7 @@ export default function Contact() {
     };
 
     return <>
-        <section className="section__contact section__btnback">
+        <section className="section__btnback">
             <Btn isLink={true} to="/" type="btn__back">
                 <IconArrowLeft fill="fill-gray__darker" />
             </Btn>
