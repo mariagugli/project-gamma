@@ -19,6 +19,7 @@ import GraphicDesign from './views/graphicdesign/GraphicDesign'
 import Notification from './components/notification/Notification'
 import Weather from './components/weather/Weather'
 import LanguageSelector from './components/selector/languageSelector'
+import { useTranslation } from 'react-i18next'
 
 function App() {
 
@@ -39,6 +40,8 @@ function App() {
     sethideIconMinus("hide");
   };
 
+  const { t } = useTranslation();
+
   return (
     <>
       <div className={location.pathname === "/" ? "screen color-bg-blue"
@@ -54,7 +57,10 @@ function App() {
               <LanguageSelector />
               <Notification 
                 name='Gugli'
+                text={t("generalParts.notification.work.text")}
+                btntext={t("generalParts.notification.work.btn")}
                 to="/contact"
+                
               />
               <Weather />
           </Card>
