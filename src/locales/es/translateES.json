@@ -150,6 +150,9 @@
                 "success": "Perfecto! He recibido tu mensaje en mi correo.",
                 "fail": "Hola, algo ha ocurrido y no se ha podido completar el envío. Inténtalo más tarde. O envíame un mensaje directamente a: info.mariagugli@gmail.com"
             }
+        },
+        "docs": {
+            "cv": "/GuglielmoneMariaCV__ES.pdf"
         }
         
     }
