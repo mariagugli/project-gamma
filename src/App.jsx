@@ -20,6 +20,8 @@ import Notification from './components/notification/Notification'
 import Weather from './components/weather/Weather'
 import { useTranslation } from 'react-i18next'
 import LanguageSelector from './components/selector/LanguageSelector'
+import Ethics from './views/ethics/Ethics'
+import Cookies from './views/ethics/Cookies'
 
 function App() {
 
@@ -52,17 +54,18 @@ function App() {
             handleClickPlus={handleAsidePopup} 
             handleClickMinus={handleHideAsidePopup} 
             btnPlustopbar={hideIconPlus} 
-            btnMinustopbar={hideIconMinus} />
+            btnMinustopbar={hideIconMinus} 
+          />
           <Card type="card-aside" moreclass={showAsidePopup}>
-              <LanguageSelector />
-              <Notification 
-                name='Gugli'
-                text={t("generalParts.notification.work.text")}
-                btntext={t("generalParts.notification.work.btn")}
-                to="/contact"
+            <LanguageSelector />
+            <Notification 
+              name='Gugli'
+              text={t("generalParts.notification.work.text")}
+              btntext={t("generalParts.notification.work.btn")}
+              to="/contact"
                 
-              />
-              <Weather />
+            />
+            <Weather />
           </Card>
         </header>
         <main className={
@@ -71,6 +74,8 @@ function App() {
           : location.pathname === "/" ? "main__home"
           : location.pathname === "/sobremi" ? "main__about"
           : location.pathname === "/randomgallery" ? "main__gallery"
+          :location.pathname === "/ethics" ? "main__ethics"
+          :location.pathname === "/cookies" ? "main__ethics"
           : "main"
 
         }>
@@ -84,6 +89,8 @@ function App() {
             <Route path="/sobremi/:imgId" element={<ImgAbout />} />
             <Route path="/proyectos/:projectId" element={<Projects />} />
             <Route path="/randomgallery" element={<Gallery />} />
+            <Route path="/ethics" element={<Ethics />} />
+            <Route path="/cookies" element={<Cookies />} />
           </Routes>
         </main>
       </div>
@@ -93,7 +100,6 @@ function App() {
           <IconArrowRight type="icon-xx-small" fill="fill-peach__lighter"/>
         </IconBtnText>
       </Btn>
-
     </>
   )
 }

@@ -133,6 +133,103 @@
         }
     },
 
+    "ethicPage": {
+        "title": "Ethical Standards",
+        "intro": "Welcome to my ethics page, where I share my principles and values as a frontend developer. As a professional in this field, I believe that ethics play a fundamental role in our work and how we interact with our clients and users.",
+        "commitment": {
+            "title": "Ethical Commitment",
+            "text": "Throughout my career as a junior frontend developer, I've established a strong commitment to ethics in my work. I believe that honesty, integrity, and transparency are paramount in any project. My ethical principles include:",
+            "list": {
+                "quality": {
+                    "name": "Quality",
+                    "definition": "I strive to deliver high-quality work to my clients and end-users. Every line of code and design undergoes rigorous quality control."
+                },
+                "userCentric": {
+                    "name": "User-Centric Approach",
+                    "definition": "My primary focus is the user. I consider them the most important clients, and my work is dedicated to enhancing their experience. All my designs and developments are geared towards providing an exceptional user experience."
+                },
+                "communication": {
+                    "name": "Clear Communication",
+                    "definition": "I maintain open and honest communication with my clients and collaborators. Transparency at every stage of a project is essential in building strong, trust-based relationships."
+                },
+                "privacy": {
+                    "name": "Privacy and Security",
+                    "definition": "I address data privacy and security concerns with the utmost seriousness. I always ensure that user data is protected and handled ethically."
+                },
+                "sustainability": {
+                    "name": "Sustainability",
+                    "definition": "I consider sustainability in my projects and practice sustainable web development whenever possible. Contributing to environmental responsibility is a responsibility I take seriously."
+                },
+                "diversity": {
+                    "name": "Diversity and Inclusion",
+                    "definition": "I actively support diversity and inclusion in the tech industry. I believe in equal opportunities for all."
+                }
+            }
+
+        },
+        "example": {
+            "title": "Practical Examples",
+            "text": "Throughout my career, I've applied these ethical principles in concrete projects. You can explore examples and case studies in my portfolio that demonstrate how my ethical approach has benefited my clients and users."
+        },
+        "codeConduct": {
+            "title": "Code of Conduct",
+            "text": "I follow a professional and ethical code of conduct in all my interactions and collaborations. This code is based on respect, collaboration, and professional ethics."
+        },
+        "contact": {
+            "title": "Contact",
+            "text": "If you wish to discuss any aspect of my ethics or how I apply them in my work as a frontend developer, please feel free to contact me. You can send me a message directly at: info.mariagugli@gmail.com."
+        },
+        "toSum": "I appreciate your interest in my ethical approach, and I hope this page provides you with a deeper understanding of my values and principles as a frontend professional."
+        
+    },
+
+    "cookiesPage": {
+        "title": "Cookies",
+        "update": "Last Updated: 06/07/2023",
+        "intro": "This Cookie Policy explains the use of cookies on our portfolio website. By using our website, you agree to the use of cookies in accordance with this policy.",
+        "explainCookie": {
+            "title": "What are Cookies?",
+            "text": "Cookies are small text files that are placed on your computer or mobile device when you visit a website. They may be used for various purposes, including enhancing your online experience and providing essential functionality."
+        },
+        "useCookies": {
+            "title": "How We Use Cookies",
+            "text": "We use cookies on our portfolio website for the following purposes:",
+            "list": {
+                "essencial": {
+                    "title": "Essential Cookies",
+                    "description": "These cookies are necessary for the proper functioning of our website. They enable you to navigate our site, access secure areas, and use essential features like our contact form."
+                },
+                "analytical": {
+                    "title": "Analytical/Performance Cookies",
+                    "description": "We may use cookies to collect anonymous information about how visitors interact with our website. This data helps us improve our site's performance and user experience."
+                }
+            }
+        },
+        "choices": {
+            "title": "Your Choices Regarding Cookies",
+            "text": "You can choose to accept or decline cookies. Most web browsers automatically accept cookies, but you can usually modify your browser settings to decline cookies if you prefer. Please note that disabling cookies may affect your ability to use certain features of our website, including the contact form."
+        },
+        "contactForm": {
+            "title": "Contact Form",
+            "text": "When you use our contact form, we collect the following information:",
+            "list": {
+                "name": "Name",
+                "email": "Email",
+                "message": "Message"
+            },
+            "description": "We use this information solely to respond to your inquiry and provide you with the requested information or assistance. We do not use this information for any other purpose, and we do not share it with third parties."
+        },
+        "updatesPolicy": {
+            "title": "Updates to this Policy",
+            "text": "We may update this Cookie Policy from time to time. Please check this page periodically for any updates."
+        },
+        "contact": {
+            "title": "Contact Us",
+            "text": "If you have any questions about our Cookie Policy or how we use cookies on our website, please contact us at: info.mariagugli@gmail.com"
+        }
+
+    },
+
     "generalParts": {
         "notification": {
             "work": {

@@ -13,7 +13,7 @@ export default function Footer(props) {
             <IconFlower type="iconflower__footer" size="flower-small" fill="fill-purple"/>
             {t("homePage.cookies")}
         </Link>
-        <Link to="/etica" className={props.linksfooter ? `link__footer ${props.linksfooter}` : "link__footer"}>
+        <Link to="/ethics" className={props.linksfooter ? `link__footer ${props.linksfooter}` : "link__footer"}>
             <IconFlower type="iconflower__footer" size="flower-small" fill="fill-peach"/>
             {t("homePage.ethics")}
         </Link>
