@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import i18next from "../../i18n";
+import i18next from "../../i18n/index"
 import './LanguageSelector.scss'
 
 export default function LanguageSelector() {
