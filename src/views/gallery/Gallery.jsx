@@ -3,6 +3,7 @@ import { useState } from "react";
 import Btn from '../../components/buttons/Btn';
 import IconArrowLeft from '../../components/icons/IconArrowLeft';
 import './Gallery.scss';
+import { useTranslation } from 'react-i18next';
 
 export default function Gallery() {
     
@@ -50,20 +51,39 @@ export default function Gallery() {
         } else return setFilteredGallery(listado)
     }
 
+    const { t } = useTranslation();
+
     return <>
         <section className="section__btnback">
             <Btn isLink={true} to="/" type="btn__back">
                 <IconArrowLeft fill="fill-gray__darker" />
             </Btn>
         </section>
-        <h1 className='margin-top-pagecontent'>Random Gallery</h1>
-        <h2 className='subtitle__gallery'>También soy fotógrafa</h2>
+        <h1 className='margin-top-pagecontent'>{t("galleryPage.title")}</h1>
+        <h2 className='subtitle__gallery'>{t("galleryPage.subtitle")}</h2>
 
         <section className="section__gallery section__menugallery">
             {buttonsFilterGallery &&
             buttonsFilterGallery.map(type => (
                 <Btn key={type.id} value={type.value} onClick={handleImagesGallery} type="btn__menugallery">
-                {type.name}
+                {type.id === "roma" ?
+                    `${t("galleryPage.roma")}`
+                : type.id === "mm" ?
+                    `${t("galleryPage.mateomorral")}`
+                : type.id === "conciertos" ?
+                    `${t("galleryPage.concerts")}`
+                : type.id === "meseta" ?
+                    `${t("galleryPage.meseta")}`
+                : type.id === "polaroids" ?
+                    `${t("galleryPage.polaroids")}`
+                : type.id === "verano" ?
+                    `${t("galleryPage.summer")}`
+                : type.id === "claudia" ?
+                    `${t("galleryPage.claudia")}`
+                : 
+                    `${t("galleryPage.all")}`
+
+                }
                 </Btn>
             ))}
         </section>

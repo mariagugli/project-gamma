@@ -110,6 +110,7 @@
     }
     @include mq() {
         gap: 0;
+        height: -webkit-fill-available;
     }
     @include mq($bp-extralarge) {
         gap: sizeComp(x-small);

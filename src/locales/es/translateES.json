@@ -1,0 +1,156 @@
+{
+    "blockedPage": {
+        "time": "de",
+        "job": "Desarrolladora web",
+        "openPage": "Click para desbloquear",
+        "toggleBlocked": "Bloqueado",
+        "toggleOpen": "Desbloqueado"
+    },
+
+    "homePage": {
+        "about": "Sobre mi",
+        "cv": "CV",
+        "calendar": "Agenda",
+        "design": "Diseño gráfico",
+        "gallery": "Galería",
+        "projects": "Proyectos",
+        "miniprojects": "Miniproyectos",
+        "cookies": "Cookies",
+        "ethics": "Ética",
+        "socials": "Redes",
+        "contact": "Contacto"
+    },
+
+    "aboutPage": {
+        "title": "Hola! Soy Maria Guglielmone",
+        "subtitle": "Desarolladora Frontend",
+        "content": {
+            "img1": {
+                "text": "Hola! Soy Maria Guglielmone Ventura, pero podéis llamarte 'Gugli'. Este mote empezó en el instituto cuando un compañero no sabía nunca decir mi apellido bien y se quedó como sello personal. La verdad es que ahora me encanta pero no siempre fue así.",
+                "date": "23 abril 2023"
+            },
+            "img2": {
+                "text": "estoy graduada en Comunicación Audiovisual por la Universidad Jaume I, en Castellón. Este año, he finalizado el postgrado de Desarrollo y Diseño Web en la ESAT, Valencia.",
+                "date": "30 de abril 2023"
+            },
+            "img3": {
+                "text": "Realicé las prácticas de mi carrera en una agencia de comunicación de Valencia: Eva Montesinos Comunicación. Tras eso seguí como fotógrafa freelance para grupos de música en Valencia y también me adentré en el mundo del diseño. Gracias a mi año como freelance en Valencia, terminé interesandome por el postgrado de ID3 de ESAT y ahora soy una desarrolladora web con mucha creatividad.",
+                "date": "10 de mayo 2023"
+            },
+            "img4": {
+                "text": "Gracias a mi programa de postgrado, he tenido la oportunidad de profundizar aún más en el multifacético mundo del desarrollo web. Como desarrollador frontend junior, he adquirido un conjunto diverso de habilidades que abarcan herramientas y tecnologías, que incluyen: 'Figma', CSS y HTML, WordPress, PHP, Javascript, React, Vite, integración de API, Frameworks de CSS (Bootstrap), preprocesadores de CSS (SCSS), diseño receptivo y accesibilidad web, gestores de paquetes (npm) y un poco de testing.",
+                "date": "16 de mayo 2023"
+            },
+            "img5": {
+                "text": "He vivido toda mi vida en Castellón, pero hace dos años me fui a vivir a Valencia. En esta ciudad he conocido a una segunda familia que me ha ayudado estos años. Ahora estoy buscando una nueva aventura y no me importa el destino que me depare.",
+                "date": "20 de mayo 2023"
+            },
+            "img6": {
+                "text": "Me encanta viajar y descubrir todo lo que me sea posible en mis viajes. Soy una persona curiosa y eso no cambia profesionalmente. Pasar de fotógrafa a desarrolladora web fue un proceso duro pero muy entretenido. Y sigo disfrutando aprendiendo nuevas cosas cada día como junior.",
+                "date": "22 de mayo 2023"
+            },
+            "img7": {
+                "text": "Busco un trabajo como front-end developer junior. Lo que más me gusta es la maquetación, pero no tengo miedo a embarcarme en nuevas aventuras.",
+                "date": "27 de mayo 2023"
+            },
+            "img8": {
+                "text": "En el futuro espero seguir trabajando como desarrolladora pero sin dejar de lado a la fotografía. Siento que una vez aprendo algo, siempre hay una parte de ello que se queda conmigo.",
+                "date": "31 de mayo 2023"
+            },
+            "img9": {
+                "text": "En realidad, no soy muy constante en redes sociales. Pero estoy en ello, como todo en la vida, hay que seguir intentándolo.",
+                "date": "2 de junio 2023"
+            }
+        }
+    },
+
+    "galleryPage": {
+        "title": "Galería Aleatoria",
+        "subtitle": "También soy fotógrafa",
+        "all": "Todas",
+        "roma": "Roma",
+        "mateomorral": "Mateo Morral",
+        "concerts": "Conciertos",
+        "meseta": "Meseta",
+        "polaroids": "Polaroids",
+        "summer": "Verano",
+        "claudia": "Claudia"
+    },
+
+    "designPage": {
+        "title": "Diseño Gráfico",
+        "menu": {
+            "roots": "Raíces",
+            "letterSoup": "Sopa de letras",
+            "dontCry": "No llores por las flores",
+            "genkoa": "Genkoa"
+        },
+        "content": {
+            "roots": "RAICES",
+            "letterSoup": "A veces siento que mi cabeza se compone de una sopa de letras sobre la que sigo descubriendo nuevas palabras.",
+            "dontCry": "No llores por las flores - invitación a una fiesta. Letras diseñadas por mi.",
+            "genkoa": "Cartel y logo para el proyecto Genkoa."
+        }
+    },
+
+    "projects": {
+        "aboutMe": {
+            "title": "AboutMe",
+            "description": "AboutMe fue mi primer proyecto como diseñadora y desarrolladora web. Es un 'one page' basado en información sobre mi donde puedes conocerme un poco más.",
+            "btn": "Ver proyecto"
+        },
+        "genkoa": {
+            "title": "Genkoa",
+            "description": "Genkoa es un proyecto realizado para la asociación cinematográfica juvenil La Simulación. Genkoa surge de la idea de conectar a futuros artistas para que puedan desarrollar su arte y tener proyectos propios que poder mostrar a la hora de buscar sus primeros trabajos. Es una iniciativa para CONECTAR ARTE dentro de la Comunidad Valencia.",
+            "btn": "Ver proyecto"
+        },
+        "portfolio": {
+            "title": "Portfolio",
+            "description": "Gugli es mi portfolio, ¡esta misma página web! En ella he explotado todos mis más recientes conocimientos en una forma orgánica, simulando 'apps' de un móvil. Ha sido completamente creado por mi, desde el proceso de diseño hasta el desarrollo de la página con React.",
+            "btn": "Volver a la pantalla de inicio"
+        }
+    },
+
+    "contactPage": {
+        "title": "Mensajes",
+        "message": {
+            "ms1": "Hola! Qué necesitas?",
+            "ms2": "No dudes en contactarme si quieres colaborar conmigo. 🙆‍♀️",
+            "ms3": "Soy una front-end developer junior con muchas ganas de seguir aprendiendo y desarrollando mis conocimientos."
+        },
+        "form": {
+            "label": {
+                "name": "Nombre",
+                "email": "Correo",
+                "message": "Mensaje"
+            },
+            "placeholder": {
+                "name": "Escríbeme tu nombre",
+                "email": "Escribe aquí tu correo",
+                "message": "Cuéntame qué necesitas"
+            },
+            "btn": "Enviar"
+        }
+    },
+
+    "generalParts": {
+        "notification": {
+            "work": {
+                "text": "Estoy disponible para trabajar.",
+                "btn": "Contáctame"
+            },
+            "weather": {
+                "placeholder": "Busca una ciudad",
+                "humidity": "Humedad",
+                "windSpeed": "Velocidad del viento"
+            }
+        },
+        "popup": {
+            "form": {
+                "success": "Perfecto! He recibido tu mensaje en mi correo.",
+                "fail": "Hola, algo ha ocurrido y no se ha podido completar el envío. Inténtalo más tarde. O envíame un mensaje directamente a: info.mariagugli@gmail.com"
+            }
+        }
+        
+    }
+}

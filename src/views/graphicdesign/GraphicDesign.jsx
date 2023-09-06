@@ -3,6 +3,7 @@ import { DESIGNPROJECTS, buttonsDesignProjects } from '../../../public/images-gr
 import { useState } from "react";
 import Btn from '../../components/buttons/Btn'
 import IconArrowLeft from '../../components/icons/IconArrowLeft'
+import { useTranslation } from 'react-i18next';
 
 export default function GraphicDesign() {
 
@@ -36,27 +37,60 @@ export default function GraphicDesign() {
         } else return
     }
 
+    const { t } = useTranslation();
+
     return <>
         <section className="section__btnback">
             <Btn isLink={true} to="/" type="btn__back">
                 <IconArrowLeft fill="fill-gray__darker" />
             </Btn>
         </section>
-        <h1 className='margin-top-pagecontent'>Diseño Gráfico</h1>
+        <h1 className='margin-top-pagecontent'>{t("designPage.title")}</h1>
         <div className="allsections__graphicdesign">
             <section className="section__graphicdesign">
                 <article className="menu__btn--gd">
                     {buttonsDesignProjects &&
                     buttonsDesignProjects.map(type => (
-                        <Btn key={type.value} value={type.value} onClick={handleDesignProject} type="btn__menugallery">{type.name}</Btn>
+                        <Btn key={type.value} value={type.value} onClick={handleDesignProject} type="btn__menugallery">
+                            {type.value === "raices" ?
+                                `${t("designPage.menu.roots")}`
+                            : type.value === "sopadeletras" ?
+                                `${t("designPage.menu.letterSoup")}`
+                            : type.value === "nolloresporlasflores" ?
+                                `${t("designPage.menu.dontCry")}`
+                            :
+                                `${t("designPage.menu.genkoa")}`
+                            }
+                        </Btn>
                     ))}
                 </article>
 
                     {filteredDesignProject &&
                     filteredDesignProject.map(project => (
                         <article key={project.id} className="info__gdproject">
-                            <h2>{project.title}</h2>
-                            <p>{project.description}</p>
+                            <h2>{project.id === "raices" ?
+                                `${t("designPage.menu.roots")}`
+                            : project.id === "sopadeletras" ?
+                                `${t("designPage.menu.letterSoup")}`
+                            : project.id === "nolloresporlasflores" ?
+                                `${t("designPage.menu.dontCry")}`
+                            :
+                                `${t("designPage.menu.genkoa")}`
+
+                            }
+                            </h2>
+
+                            <p>{project.id === "raices" ?
+                                `${t("designPage.content.roots")}`
+                            : project.id === "sopadeletras" ?
+                                `${t("designPage.content.letterSoup")}`
+                            : project.id === "nolloresporlasflores" ?
+                                `${t("designPage.content.dontCry")}`
+                            :
+                                `${t("designPage.content.genkoa")}`
+
+                            }
+                            </p>
                         </article>
                     ))}
 

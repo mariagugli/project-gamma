@@ -11,8 +11,11 @@ import { useEffect, useRef, useState } from "react";
 import IconCodepen from "../../components/icons/IconCodepen";
 import IconGithub from "../../components/icons/IconGithub";
 import IconLinkedIn from "../../components/icons/IconLinkedIn";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+
+    const { t } = useTranslation();
 
     const [ showProjects, setShowProjects] = useState("card");
     const [ showSocials, setShowSocials] = useState("card");
@@ -57,7 +60,7 @@ export default function Home() {
             <section className="section__home section__btnabout">
                 <Link to="/sobremi">
                     <IconFlowerLarge type="flower-home" fill="fill-yellow">
-                        <p>Sobre mi</p>
+                        <p>{t("homePage.about")}</p>
                     </IconFlowerLarge>
                 </Link>
             </section>
@@ -66,24 +69,24 @@ export default function Home() {
                     <div className="flowergroup-line">
                         <a href="/MariaGuglielmoneCV.pdf" target="”_blank”">
                             <IconFlower type="flower-home" size="flower-default" fill="fill-purple">
-                                <p>CV</p>
+                                <p>{t("homePage.cv")}</p>
                             </IconFlower>
                         </a>
                         <Link to="/" className="flower-right">
                             <IconFlower type="flower-home" size="flower-default" fill="fill-peach">
-                                <p>Agenda</p>
+                                <p>{t("homePage.calendar")}</p>
                             </IconFlower>
                         </Link>
                     </div>
                     <div className="flowergroup-line">
                         <Link to="/graphicdesign">
                             <IconFlower type="flower-home" size="flower-default" fill="fill-yellow">
-                                <p>Diseño Gráfico</p>
+                                <p>{t("homePage.design")}</p>
                             </IconFlower>
                         </Link>
                         <Link to="/randomgallery" className="flower-right">
                             <IconFlower type="flower-home" size="flower-default" fill="fill-olive">
-                                <p>Random Gallery</p>
+                                <p>{t("homePage.gallery")}</p>
                             </IconFlower>
                         </Link>
                         
@@ -91,14 +94,14 @@ export default function Home() {
                 </article>
                 <Btn type="btn--home btn__bigflower--home" size="none" onClick={handleProjects}>
                     <IconFlower type="flower-home" size="flower-big" fill="fill-orange">
-                        <p>Proyectos</p>
+                        <p>{t("homePage.projects")}</p>
                     </IconFlower>
                 </Btn>
             </section>
             <section className="section__home section__btnminiprojects">
                 <Link to="/miniproyectos">
                     <IconFlowerXlarge type="flower-home" fill="fill-peach">
-                        <p>Miniproyectos</p>
+                        <p>{t("homePage.miniprojects")}</p>
                     </IconFlowerXlarge>
                 </Link>
             </section>

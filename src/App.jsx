@@ -18,6 +18,7 @@ import Projects from './views/projects/Projects'
 import GraphicDesign from './views/graphicdesign/GraphicDesign'
 import Notification from './components/notification/Notification'
 import Weather from './components/weather/Weather'
+import LanguageSelector from './components/selector/languageSelector'
 
 function App() {
 
@@ -50,10 +51,9 @@ function App() {
             btnPlustopbar={hideIconPlus} 
             btnMinustopbar={hideIconMinus} />
           <Card type="card-aside" moreclass={showAsidePopup}>
+              <LanguageSelector />
               <Notification 
-                name='Gugli' 
-                text='Estoy disponible para trabajar.' 
-                btntext='Contáctame'
+                name='Gugli'
                 to="/contact"
               />
               <Weather />

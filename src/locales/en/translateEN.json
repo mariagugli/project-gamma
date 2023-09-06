@@ -1,0 +1,155 @@
+{
+    "blockedPage": {
+        "time": "of",
+        "job": "Frontend Developer",
+        "openPage": "Click to unlock",
+        "toggleBlocked": "Locked",
+        "toggleOpen": "Unlocked"
+    },
+
+    "homePage": {
+        "about": "About me",
+        "cv": "CV",
+        "calendar": "Calendar",
+        "design": "Graphic Design",
+        "gallery": "Random Gallery",
+        "projects": "Projects",
+        "miniprojects": "Miniprojects",
+        "cookies": "Cookies",
+        "ethics": "Ethics",
+        "socials": "Socials",
+        "contact": "Contact"
+    },
+
+    "aboutPage": {
+        "title": "Hello! I'm Maria Guglielmone",
+        "subtitle": "Frontend Developer",
+        "content": {
+            "img1": {
+                "text": "Hello! I'm Maria Guglielmone Ventura, but you can call me 'Gugli.' This nickname started in high school when a classmate could never pronounce my last name correctly, and it stuck as a personal label. The truth is, I love it now, but it wasn't always the case.",
+                "date": "April 23, 2023"
+            },
+            "img2": {
+                "text": "I have a degree in Audiovisual Communication from Jaume I University in Castellon (Spain). This year, I completed the postgraduate program in Web Development and Design at ESAT, Valencia.",
+                "date": "April 30, 2023"
+            },
+            "img3": {
+                "text": "I did my internship during my career at a communication agency in Valencia: Eva Montesinos Comunicación. After that, I continued as a freelance photographer for music groups in Valencia and also delved into the world of design. Thanks to my year as a freelancer in Valencia, I became interested in the ID3 postgraduate program at ESAT, and now I am a web developer with a lot of creativity.",
+                "date": "May 10, 2023"
+            },
+            "img4": {
+                "text": "Through my postgraduate program, I've had the opportunity to delve deeper into the multifaceted realm of web development. As a junior frontend developer, I've acquired a diverse skill set that encompasses tools and technologies, which include: Figma, CSS and HTML, WordPress, PHP, Javascript, React, Vite, API integration, CSS Frameworks (Bootstrap), CSS Preprocessors (SCSS), responsive design and web accesibility, package managers (npm) and a little of testing.",
+                "date": "May 16, 2023"
+            },
+            "img5": {
+                "text": "I've lived my entire life in Castellón (Spain), but two years ago, I moved to Valencia. In this city, I've found a second family that has supported me during these years. Now, I'm seeking a new adventure and I'm open to whatever the future holds for me.",
+                "date": "May 20, 2023"
+            },
+            "img6": {
+                "text": "I love to travel and discover as much as I can during my journeys. I'm a curious person, and that doesn't change professionally. Transitioning from a photographer to a web developer was a challenging yet immensely enjoyable process. As a junior, I continue to learn new things every day.",
+                "date": "May 22, 2023"
+            },
+            "img7": {
+                "text": "I'm seeking a job as a junior frontend developer. My passion lies in css, but I'm not afraid to embark on new adventures.",
+                "date": "May 27, 2023"
+            },
+            "img8": {
+                "text": "In the future, I hope to continue working as a developer while also keeping photography in my life. I feel that once I learn something, there's always a part of it that stays with me.",
+                "date": "May 31, 2023"
+            },
+            "img9": {
+                "text": "Actually, I'm not very consistent on social media. But I'm working on it, as with everything in life, you have to keep trying.",
+                "date": "Jun 2, 2023"
+            }
+        }
+    },
+
+    "galleryPage": {
+        "title": "Random Gallery",
+        "subtitle": "I'm also photographer",
+        "all": "All",
+        "roma": "Rome",
+        "mateomorral": "Mateo Morral",
+        "concerts": "Concerts",
+        "meseta": "Meseta",
+        "polaroids": "Polaroids",
+        "summer": "Summer",
+        "claudia": "Claudia"
+    },
+
+    "designPage": {
+        "title": "Graphic Design",
+        "menu": {
+            "roots": "Roots",
+            "letterSoup": "Alphabet Soup",
+            "dontCry": "Don't cry for the flowers",
+            "genkoa": "Genkoa"
+        },
+        "content": {
+            "roots": "ROOTS",
+            "letterSoup": "Sometimes I feel like my head is made up of a alphabet soup on which I keep discovering new words.",
+            "dontCry": "Don't cry for the flowers - an invitation to a party. Letters designed by me.",
+            "genkoa": "Poster and logo for Genkoa's project."
+        }
+    },
+
+    "projects": {
+        "aboutMe": {
+            "title": "AboutMe",
+            "description": "AboutMe was my first project as a web designer and developer. It's a 'one page' based on information about me where you can get to know me a little better.",
+            "btn": "See project"
+        },
+        "genkoa": {
+            "title": "Genkoa",
+            "description": "Genkoa is a project carried out for the youth film association 'La Simulación.' Genkoa arises from the idea of connecting future artists so that they can develop their art and have their own projects to showcase when seeking their first jobs. It is an initiative to CONNECT ART within the Valencian Community.",
+            "btn": "See project"
+        },
+        "portfolio": {
+            "title": "Portfolio",
+            "description": "Gugli is my portfolio, this very website! On it, I have showcased all my most recent knowledge in an organic way, simulating mobile 'apps.' It has been entirely created by me, from the design process to the development of the website using React.",
+            "btn": "Back to the beginning"
+        }
+    },
+
+    "contactPage": {
+        "title": "Messages",
+        "message": {
+            "ms1": "Hello! What do you need?", 
+            "ms2":"Don't hesitate to contact me if you want to collaborate with me. 🙆‍♀️", 
+            "ms3":"I am a junior front-end developer with a strong desire to continue learning and expanding my knowledge."
+        },
+        "form": {
+            "label": {
+                "name": "Name",
+                "email": "Email",
+                "message": "Message"
+            },
+            "placeholder": {
+                "name": "Write your name",
+                "email": "Write your email here",
+                "message": "Tell me what you need"
+            },
+            "btn": "Submit"
+        }
+    },
+
+    "generalParts": {
+        "notification": {
+            "work": {
+                "text": "I am available to work.",
+                "btn": "Contact me"
+            },
+            "weather": {
+                "placeholder": "Search any city",
+                "humidity": "Humidity",
+                "windSpeed": "Wind Speed"
+            }
+        },
+        "popup": {
+            "form": {
+                "success": "Perfect! I've received your message in my email.",
+                "fail": "Hello, something has occurred, and the delivery couldn't be completed. Please try again later. Or send me a message directly at: info.mariagugli@gmail.com"
+            }
+        }
+    }
+}

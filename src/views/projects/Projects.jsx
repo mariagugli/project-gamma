@@ -6,6 +6,7 @@ import IconArrowRight from "../../components/icons/IconArrowRight";
 import IconBtnText from "../../components/icons/IconBtnText";
 import './Projects.scss'
 import Tag from "../../components/Tags/Tag";
+import { useTranslation } from "react-i18next";
 
 
 export default function Projects() {
@@ -13,6 +14,9 @@ export default function Projects() {
     const listado = PROJECTS;
 
     const listadoSeleccionado = listado.find(project => project.id === params.projectId);
+
+    const { t } = useTranslation();
+    
 
     return <>
         <section className="section__btnback">
@@ -26,14 +30,24 @@ export default function Projects() {
             {listadoSeleccionado.tags.map(tag => <Tag type={tag} key={tag} size="tag-small" />)}
         </section> 
         <img className="img__projects" src={listadoSeleccionado.image} alt={listadoSeleccionado.title} />
-        <p className="description__projects">{listadoSeleccionado.description}</p>
+        
+        {listadoSeleccionado.id === "aboutme" ?
+
+            <p className="description__projects">{t("projects.aboutMe.description")}</p>
+        : listadoSeleccionado.id === "genkoa" ?
+            <p className="description__projects">{t("projects.genkoa.description")}</p>
+        :
+            <p className="description__projects">{t("projects.portfolio.description")}</p>
+
+        }
+
         {listadoSeleccionado.id !== "portfolio" ?
             <a className="link__projects" href={listadoSeleccionado.link} target="_blank">
                 <Btn type="btn-text__dark btn__projects" size="small">
                     <IconBtnText bg="icon-dark-bg" br="icon-light-br">
                         <IconArrowRight size="icon-xx-small" fill="fill-peach__lighter"/>
                     </IconBtnText>
-                    Ver proyecto
+                    {t("projects.aboutMe.btn")}
                 </Btn>
             </a>
         : 
@@ -41,7 +55,7 @@ export default function Projects() {
                 <IconBtnText bg="icon-dark-bg" br="icon-light-br">
                     <IconArrowRight size="icon-xx-small" fill="fill-peach__lighter"/>
                 </IconBtnText>
-                Volver a la pantalla de inicio
+                {t("projects.portfolio.btn")}
             </Btn>     
         }
         

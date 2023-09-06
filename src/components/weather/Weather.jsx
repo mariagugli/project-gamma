@@ -3,6 +3,7 @@ import axios from 'axios';
 import IconSun from '../icons/IconSun';
 import Searcher from '../searcher/Searcher';
 import './Weather.scss';
+import { useTranslation } from 'react-i18next';
 
 export default function Weather(props) {
     const apiKey = "3f2a410bf310fbbdf994fd9be0582395"
@@ -25,6 +26,8 @@ export default function Weather(props) {
             console.log(Response.data)
         })
     }
+
+    const { t } = useTranslation();
 
     return <article className='weather__app'>
         <Searcher 
@@ -56,12 +59,12 @@ export default function Weather(props) {
                         
                         {data.main 
                         ? 
-                            <p className="weather__humidity">Humedad: {data.main.humidity}%</p> 
+                            <p className="weather__humidity">{t("generalParts.notification.weather.humidity")}: {data.main.humidity}%</p> 
                         : null}
                         
                         {data.wind 
                         ? 
-                            <p className="weather__wind">Velocidad del viento: {data.wind.speed}km/h</p> 
+                            <p className="weather__wind">{t("generalParts.notification.weather.windSpeed")}: {data.wind.speed}km/h</p> 
                         : null}
                     </div>
                 </div>

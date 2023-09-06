@@ -6,6 +6,7 @@ import emailjs from '@emailjs/browser';
 import { useRef, useState } from "react";
 import './Contact.scss'
 import Popup from '../../components/popup/Popup';
+import { useTranslation } from 'react-i18next';
 
 export default function Contact() {
     const form = useRef();
@@ -37,31 +38,33 @@ export default function Contact() {
         e.target.reset()
     };
 
+    const { t } = useTranslation();
+
     return <>
         <section className="section__btnback">
             <Btn isLink={true} to="/" type="btn__back">
                 <IconArrowLeft fill="fill-gray__darker" />
             </Btn>
         </section>
-        <h1 className='title__contact'>Mensajes</h1>
+        <h1 className='title__contact'>{t("contactPage.title")}</h1>
         <section className="section__contact section__messages">
-            <Message className="ms-contactpage ms--1" type="primary" size="small">Hola! Qué necesitas?</Message>
-            <Message className="ms-contactpage ms--2" type="primary" size="small">No dudes en contactarme si quieres colaborar conmigo. 🙆‍♀️</Message>
-            <Message className="ms-contactpage ms--3" type="primary" size="small">Soy una front-end developer junior con muchas ganas de seguir aprendiendo y desarrollando mis conocimientos.</Message>
+            <Message className="ms-contactpage ms--1" type="primary" size="small">{t("contactPage.message.ms1")}</Message>
+            <Message className="ms-contactpage ms--2" type="primary" size="small">{t("contactPage.message.ms2")}</Message>
+            <Message className="ms-contactpage ms--3" type="primary" size="small">{t("contactPage.message.ms3")}</Message>
         </section>
         <section className="section__contact contact__form">
             <form ref={form} onSubmit={sendEmail}>
-                <Input isInputForm={true} type="input-row" size="input-small" label="Nombre" placeholder="Escríbeme tu nombre" inputName="user__name"/>
-                <Input isInputForm={true} type="input-row" size="input-small" inputtype="email" label="Correo" placeholder="Escribe aquí tu correo" inputName="user__email" />
-                <Input isInputForm={true} type="input-column input-column--contact" size="input-small" inputtype="textarea" inputclass="input--contact__message" label="Mensaje" placeholder="Cuéntame qué necesitas en esta casilla" inputName="user__message" />
+                <Input isInputForm={true} type="input-row" size="input-small" label={t("contactPage.form.label.name")} placeholder={t("contactPage.form.placeholder.name")} inputName="user__name"/>
+                <Input isInputForm={true} type="input-row" size="input-small" inputtype="email" label={t("contactPage.form.label.email")} placeholder={t("contactPage.form.placeholder.email")} inputName="user__email" />
+                <Input isInputForm={true} type="input-column input-column--contact" size="input-small" inputtype="textarea" inputclass="input--contact__message" label={t("contactPage.form.label.message")} placeholder={t("contactPage.form.placeholder.message")} inputName="user__message" />
                 <Btn type="btn-primary btn-submitform" size="small">
-                    <input type='submit' value="Enviar" />
+                    <input type='submit' value={t("contactPage.form.btn")} />
                 </Btn>
                 
             </form>
         </section>
-        <Popup type="correct" className={showPopupCorrect}>Perfecto! He recibido tu mensaje en mi correo.</Popup>
-        <Popup type="error" className={showPopupError}>Hola, algo ha ocurrido y no se ha podido completar el envío. Inténtalo más tarde. O envíame un mensaje directamente a: info.mariagugli@gmail.com</Popup>
+        <Popup type="correct" className={showPopupCorrect}>{t("generalParts.popup.form.success")}</Popup>
+        <Popup type="error" className={showPopupError}>{t("generalParts.popup.form.fail")}</Popup>
     </>
    
 }
