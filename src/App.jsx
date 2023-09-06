@@ -18,8 +18,8 @@ import Projects from './views/projects/Projects'
 import GraphicDesign from './views/graphicdesign/GraphicDesign'
 import Notification from './components/notification/Notification'
 import Weather from './components/weather/Weather'
-import LanguageSelector from './components/selector/languageSelector'
 import { useTranslation } from 'react-i18next'
+import LanguageSelector from './components/selector/languageSelector'
 
 function App() {
 
