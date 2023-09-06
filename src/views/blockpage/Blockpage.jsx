@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom"
 import { useState, useEffect } from "react"
 import Icon from "../../components/icons/Icon"
 import Input from "../../components/inputs/Input"
-import LanguageSelector from "../../components/selector/languageSelector"
+import LanguageSelector from "../../components/selector/LanguageSelector"
 import './Blockpage.scss'
 import { useTranslation } from "react-i18next";
 

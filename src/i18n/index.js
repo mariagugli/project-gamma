@@ -14,7 +14,6 @@ const resources = {
 };
 
 i18next
-
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
       resources, // resources are important to load translations for the languages.

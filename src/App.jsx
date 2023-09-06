@@ -19,7 +19,7 @@ import GraphicDesign from './views/graphicdesign/GraphicDesign'
 import Notification from './components/notification/Notification'
 import Weather from './components/weather/Weather'
 import { useTranslation } from 'react-i18next'
-import LanguageSelector from './components/selector/languageSelector'
+import LanguageSelector from './components/selector/LanguageSelector'
 
 function App() {
 
