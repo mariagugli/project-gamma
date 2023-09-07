@@ -21,9 +21,9 @@
   
 body {
   margin: 0;
-  padding: 12px 12px 10px;
+  padding: 12px 12px 0;
   width: calc(100vw - 24px);
-    height: calc(100svh - 10px);
+    height: calc(100svh - 12px);
   background-color: $gray__darker;
 }
   
