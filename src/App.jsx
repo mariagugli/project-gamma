@@ -22,6 +22,7 @@ import { useTranslation } from 'react-i18next'
 import LanguageSelector from './components/selector/LanguageSelector'
 import Ethics from './views/ethics/Ethics'
 import Cookies from './views/ethics/Cookies'
+import Error from './views/error/Error'
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
     <>
       <div className={location.pathname === "/" ? "screen color-bg-blue"
       : location.pathname === "/blockpage" ? "screen color-bg-blue"
+      : location.pathname === "/404" ? "screen color-bg-purple__light"
       : "screen color-bg-white"}>
         <header className={location.pathname === "/blockpage" ? 'hide' : ''}>
           <Topbar 
@@ -76,6 +78,7 @@ function App() {
           : location.pathname === "/randomgallery" ? "main__gallery"
           :location.pathname === "/ethics" ? "main__ethics"
           :location.pathname === "/cookies" ? "main__ethics"
+          :location.pathname === "/404" ? "main__error"
           : "main"
 
         }>
@@ -91,6 +94,7 @@ function App() {
             <Route path="/randomgallery" element={<Gallery />} />
             <Route path="/ethics" element={<Ethics />} />
             <Route path="/cookies" element={<Cookies />} />
+            <Route path="/404" element={<Error />} />
           </Routes>
         </main>
       </div>

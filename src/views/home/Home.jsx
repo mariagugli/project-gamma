@@ -72,7 +72,7 @@ export default function Home() {
                                 <p>{t("homePage.cv")}</p>
                             </IconFlower>
                         </a>
-                        <Link to="/" className="flower-right">
+                        <Link to="/404" className="flower-right">
                             <IconFlower type="flower-home" size="flower-default" fill="fill-peach">
                                 <p>{t("homePage.calendar")}</p>
                             </IconFlower>
@@ -99,7 +99,7 @@ export default function Home() {
                 </Btn>
             </section>
             <section className="section__home section__btnminiprojects">
-                <Link to="/miniproyectos">
+                <Link to="/404">
                     <IconFlowerXlarge type="flower-home" fill="fill-peach">
                         <p>{t("homePage.miniprojects")}</p>
                     </IconFlowerXlarge>

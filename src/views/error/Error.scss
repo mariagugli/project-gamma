@@ -1,0 +1,18 @@
+@import '../../scss/global.scss';
+
+.main__error {
+    padding-top: 100px;
+}
+
+.btns__nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.title__errorPage {
+    font-size: fs(big);
+    @include mq($bp-small) {
+        font-size: fs(x-big);
+    }
+}

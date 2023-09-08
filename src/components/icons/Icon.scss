@@ -188,3 +188,11 @@ svg {
 .icon-100 {
     width: 100%;
 }
+
+.icon-title {
+    @include icon-size(big, auto);
+
+    @include mq () {
+        @include icon-size(xx-big, auto);
+    }
+}

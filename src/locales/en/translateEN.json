@@ -230,6 +230,15 @@
 
     },
 
+    "errorPage": {
+        "subtitle": "We're sorry, we're working on this page.",
+        "explain": "Right now, this content cannot be displayed. Please try again later; we are working to improve this portfolio.",
+        "newPath": "If you want to know more about me or my work:",
+        "btnContact": "Let's talk :)",
+        "btnAbout": "Know more about me",
+        "thanks": "Thanks!🌷"
+    },
+
     "generalParts": {
         "notification": {
             "work": {

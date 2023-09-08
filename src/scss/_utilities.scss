@@ -19,6 +19,9 @@
     [fill="#{$key}"] {
         fill: $value;
     }
+    [stroke="#{$key}"] {
+        stroke: $value;
+    }
     .fill-#{$key} {
         fill: $value;
     }
